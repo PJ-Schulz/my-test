@@ -2,5 +2,17 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["trio"],
+      "enabled": false
+    },
+    {
+      "description": "Automatically merge minor and patch-level updates",
+      "matchPackageNames": ["pydantic"],
+      "matchUpdateTypes": ["patch", "digest"],
+      "automerge": true
+    }
   ]
 }
