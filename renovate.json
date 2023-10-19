@@ -3,9 +3,6 @@
   "extends": [
     "config:base",
   ],
-  "schedule": [
-    "before 1pm"
-  ],
   "packageRules": [
     {
       "matchPackageNames": ["trio"],
