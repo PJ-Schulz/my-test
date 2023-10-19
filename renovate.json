@@ -15,10 +15,6 @@
       "matchPackageNames": [
         "pydantic"
       ],
-      "matchUpdateTypes": [
-        "patch",
-        "digest"
-      ],
       "automerge": true
     },
     {
