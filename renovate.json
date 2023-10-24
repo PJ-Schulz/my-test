@@ -4,6 +4,7 @@
     "config:base"
   ],
   "labels": ["my-fancy-test-label"],
+  "rebaseWhen": "behind-base-branch",
   "hostRules": [
     {
       "matchHost": "https://github.com/PJ-Schulz",
