@@ -3,30 +3,23 @@
   "extends": [
     "config:base"
   ],
+  "prHeader": "ThisIsMyHeader",
+  "assignees": ["PJ-Schulz"],
+  "labels": ["my-fancy-test-label"],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "trio"
-      ],
+      "matchPackageNames": ["trio"],
       "enabled": false
     },
     {
       "description": "Automatically merge minor and patch-level updates",
-      "matchPackageNames": [
-        "pydantic"
-      ],
+      "matchPackageNames": ["pydantic"],
       "automerge": true
     },
     {
-      "matchDepTypes": [
-        "devDependencies"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ]
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "labels": ["this-is-a-dev-label"]
     }
   ]
 }
