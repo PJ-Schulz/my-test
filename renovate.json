@@ -5,6 +5,17 @@
   ],
   "assignees": ["PJ-Schulz"],
   "labels": ["my-fancy-test-label"],
+  {
+    "hostRules": [
+      {
+        "matchHost": "https://github.com/PJ-Schulz",
+        "hostType": "github"
+        "encrypted": {
+          "token": "wcFMA/xDdHCJBTolARAAiUz7+oFTBykDtbzPv9Y8REDLBUVpXXi8S32j/HTp79RCEA86ol6YwzX4sLjGr/3oa/nUSdSj3ClEEfwISSqDSk64s5YzWCZi6j6jrjoJpDldLgc/Q0zLtofg82CP+0l446QlRlQuHzDgTPlG058w5Gpbd+MUj8cOz2lcj1Td8AbvGy1meZjASkzxb0f2IVH8ZTm87E6AaiJ9gD+n5jL0zTpF+OSzq/IZmkvl2EE/gEh2bRU/YCSf8TNCMVZgvxuFzwZhdJSmVXV26TV4Gar/5oNNwq/59Nz9CTnGzayp31ILn6UhZVkODv64+ziyEgAwEUHAJ6HaH3kbOZQDlOxjdCQUfN/oMlSrNneMSZaTyK9jqhpetAKjbH5oMVojH01WYSNzrXP/937QzS5MASDYZ+8BxgP5GW7NS3j2Kh0Dxyf8HPwKRKFWfUbMonDmR1lFtAEglrbNVSFmf2QjAWfNXdpnwwxypyYzk9k9+f1t8oy8b0XujktRuR2QP+KQtboQYWh4Y/gNMqC+KQSxf0sBqrMNegydGh2MnjIoGiecsiV+soWZOrqm8WfWiFxa4MNfjtFdGpLkcmlsri2C9O08iajddSOt3BwcjPPpJjZagdBiOdaPGgfajluX7mjsgUO6S/Hx7Q2O3Wf3nCWWs8LKJg8RCEYlw34CARhkbhJ6VoTSeAE/ZO+pV0yGivhv9TBKcI0EhTgkRI9dryK+34cLEmfnLVeAHPzes/+Ucx+AIVR4pTTF6nj6uihPVqA+C0PoPmQTa3nc+IGdzB7T59BRgSiwSGvvzHX5qRkxvoIW/2l6dfRL1gTqB3ipgeyCQ07UNCAw38S1si8vEw"
+        }
+      },
+    ]
+  },
   "packageRules": [
     {
       "matchPackageNames": ["trio"],
