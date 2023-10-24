@@ -3,7 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "assignees": ["PJ-Schulz"],
   "labels": ["my-fancy-test-label"],
   "hostRules": [
     {
