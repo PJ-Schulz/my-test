@@ -20,10 +20,6 @@
       "enabled": false
     },
     {
-      "matchPackageNames": ["test234"],
-      "matchDatasources": ["github-tags"]
-    },
-    {
       "description": "Automatically merge minor and patch-level updates",
       "matchPackageNames": ["pydantic"],
       "automerge": true
