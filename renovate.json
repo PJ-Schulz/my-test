@@ -5,7 +5,8 @@
   ],
   "labels": ["my-fancy-test-label2"],
   "rebaseWhen": "behind-base-branch",
-  "schedule": "* 12 * * 2",
+  "timezone": "Europe/Berlin",
+  "schedule": "* 14 * * 2",
   "hostRules": [
     {
       "matchHost": "https://github.com/PJ-Schulz",
