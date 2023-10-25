@@ -6,7 +6,7 @@
   "labels": ["my-fancy-test-label2"],
   "rebaseWhen": "behind-base-branch",
   "timezone": "Europe/Berlin",
-  "schedule": "* 6 * * 3",
+  "schedule": "* 6 * * *",
   "hostRules": [
     {
       "matchHost": "https://github.com/PJ-Schulz",
@@ -35,6 +35,7 @@
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "matchCurrentVersion": "!/^0/",
+      "automerge": true,
       "labels": ["this-is-a-dev-label"]
     }
   ]
