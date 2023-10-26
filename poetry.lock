@@ -150,7 +150,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk-lambda-subminute"
-version = "2.0.277"
+version = "2.0.279"
 description = "A construct for deploying a Lambda function that can be invoked every time unit less than one minute."
 category = "main"
 optional = false
@@ -159,7 +159,7 @@ python-versions = "~=3.7"
 [package.dependencies]
 aws-cdk-lib = ">=2.94.0,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.90.0,<2.0.0"
+jsii = ">=1.91.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
@@ -359,7 +359,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "jsii"
-version = "1.90.0"
+version = "1.91.0"
 description = "Python client for jsii runtime"
 category = "main"
 optional = false
@@ -711,7 +711,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c2a699a4c1b7d9a607cb6c492ab2b56caf7745d08a9aaac79fee5f6d32f80b43"
+content-hash = "41aa6cb83ef220e0d3373badf70368e08ab2325d2b36a512d1476bafdd2db20f"
 
 [metadata.files]
 annotated-types = [
@@ -759,8 +759,8 @@ cdk-aurora-globaldatabase = [
     {file = "cdk_aurora_globaldatabase-2.3.300-py3-none-any.whl", hash = "sha256:ea2ad54d78d084939428901d9c291ed1d36c04bdc3bbcd6c207351e0085b0246"},
 ]
 cdk-lambda-subminute = [
-    {file = "cdk_lambda_subminute-2.0.277-py3-none-any.whl", hash = "sha256:7a8709473f049b17a450f830f109809a76102772eb7468517b29059a3a804d9a"},
-    {file = "cdk_lambda_subminute-2.0.277.tar.gz", hash = "sha256:7a31735ed78a96dd1f9946bbb402007b98746a0d05ca76de9f90ca8f3d3e26e0"},
+    {file = "cdk_lambda_subminute-2.0.279-py3-none-any.whl", hash = "sha256:ecdec68f1206716efc78d1851f983e13fdd82c1676cdddcafd27ddd429897643"},
+    {file = "cdk_lambda_subminute-2.0.279.tar.gz", hash = "sha256:76502f77c5626f5266fdda13ff7bb17335c874905e73e313cdbb0da6fda38611"},
 ]
 certifi = [
     {file = "certifi-2023.7.22-py3-none-any.whl", hash = "sha256:92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"},
@@ -1008,8 +1008,8 @@ jmespath = [
     {file = "jmespath-0.10.0.tar.gz", hash = "sha256:b85d0567b8666149a93172712e68920734333c0ce7e89b78b3e987f71e5ed4f9"},
 ]
 jsii = [
-    {file = "jsii-1.90.0-py3-none-any.whl", hash = "sha256:e8a9a94c5116da96f11e79f16d4a290e1e7e1652b4addb8cce5c56f8ef570479"},
-    {file = "jsii-1.90.0.tar.gz", hash = "sha256:2fcc68d8cf88260bc8e502789d43ab46e7672b6f82d498ed62a52a4366fbccc5"},
+    {file = "jsii-1.91.0-py3-none-any.whl", hash = "sha256:2905a4ea030ae7289b859e97003c01f4569650b4865c51e7f83d975b95c5b20a"},
+    {file = "jsii-1.91.0.tar.gz", hash = "sha256:9600ac7d04b237ee229c74ffde65ece27202ceec5df5e7eebd88a532d2cb28d6"},
 ]
 mccabe = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},
