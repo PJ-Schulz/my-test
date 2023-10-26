@@ -26,18 +26,8 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["trio"],
-      "enabled": false
-    },
-    {
-      "description": "Automatically merge minor and patch-level updates",
-      "matchPackageNames": ["pydantic"],
+      "matchFileNames": ["pyproject.toml", "poetry.lock"],
       "automerge": true
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true,
-      "labels": ["devDependencies"]
     }
   ]
 }
