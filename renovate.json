@@ -7,8 +7,6 @@
   "rebaseWhen": "behind-base-branch",
   "platformAutomerge": true,
   "ignoreTests": false,
-  "automergeType": "pr",
-  "automergeStrategy": "merge-commit",
   "timezone": "Europe/Berlin",
   "schedule": [
     "* * * * *"
