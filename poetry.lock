@@ -488,7 +488,7 @@ six = ">=1.5"
 
 [[package]]
 name = "redis"
-version = "4.6.0"
+version = "5.0.1"
 description = ""
 category = "main"
 optional = false
@@ -505,8 +505,8 @@ ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"
 [package.source]
 type = "git"
 url = "https://github.com/redis/redis-py.git"
-reference = "v4.6.0"
-resolved_reference = "9f503578d1ffed20d63e8023bcd8a7dccd15ecc5"
+reference = "v5.0.1"
+resolved_reference = "cc4bc1a544d1030aec1696baef2861064fa8dd1c"
 
 [[package]]
 name = "requests"
@@ -685,7 +685,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "862a1375952d334153f51b48ff3689f3b10a1f1e472d7ef068660a0302fa17bb"
+content-hash = "550a4ca5a6d6682c3e28b6cb38306cc03e0182ab2de62db22c8f0433e9606d1d"
 
 [metadata.files]
 annotated-types = [
