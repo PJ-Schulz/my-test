@@ -1,0 +1,59 @@
+name: Version Increase after Dependency Update
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  bump-version:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Install poetry
+        run: pip install poetry==1.2.2
+        shell: bash
+
+      - name: Check if PR is dependency update
+        id: check
+        run: |
+          CHANGES=$(gh pr view ${{ github.event.pull_request.number }} --json title -q .title)
+          if [[ "$CHANGES" == *'chore(deps): update dependency'* || "$CHANGES" == *'fix(deps): update dependency'* ]]; then
+            echo "Dependency update detected. Proceeding to version bump..."
+            echo "DEPENDENCY_UPDATE=True" >> "$GITHUB_OUTPUT"
+          else
+            echo "No dependency update detected. Exiting."
+            echo "DEPENDENCY_UPDATE=False" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Bump version in pyproject.toml
+        if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
+        run: poetry version patch
+
+      - name: Create Pull Request
+        if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: Increase version
+          committer: GitHub <noreply@github.com>
+          add-paths: |
+            pyproject.toml
+          title: Increase version
+          branch: bumb-version # no whitespaces allowed
+          delete-branch: true
+
+      - name: Pull Request Automerge
+        run: gh pr merge --merge --auto --delete-branch bumb-version
+        env:
+          GH_TOKEN: ${{ github.token }}

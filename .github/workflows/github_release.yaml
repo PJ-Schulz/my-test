@@ -1,0 +1,37 @@
+name: Github Release
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+  workflow_run:
+    workflows: ["Version Increase after Dependency Update"]
+    types: [completed]
+
+jobs:
+  github_release:
+    if: >
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true) ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    # if: ${{  }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: "3.9"
+      - name: Python Poetry Action
+        uses: abatilo/actions-poetry@v2.2.0
+      - name: Set env
+        run: echo "POETRY_NEW=$(poetry version --short)" >> $GITHUB_ENV
+
+      - uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.POETRY_NEW }}
+          name: "v.${{ env.POETRY_NEW }}"
+          commit: main
+          generateReleaseNotes: true
+          token: ${{ github.token }}
