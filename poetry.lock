@@ -142,7 +142,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk-lambda-subminute"
-version = "2.0.283"
+version = "2.0.284"
 description = "A construct for deploying a Lambda function that can be invoked every time unit less than one minute."
 category = "main"
 optional = false
@@ -729,8 +729,8 @@ cdk-aurora-globaldatabase = [
     {file = "cdk_aurora_globaldatabase-2.3.318-py3-none-any.whl", hash = "sha256:61e9d34fd2d39fd5f7526504431afee6afec91d109fae9d1c1ecd55a1fd811a0"},
 ]
 cdk-lambda-subminute = [
-    {file = "cdk_lambda_subminute-2.0.283-py3-none-any.whl", hash = "sha256:5b3373e2ece0dc22720c67ce4dac3509c222edcae0a66a02f7a507e6af8fcd4b"},
-    {file = "cdk_lambda_subminute-2.0.283.tar.gz", hash = "sha256:a92cd9aa1f19f2a5104d241158ffb76c7409bcd77dde54d39d168ff4dd0d5960"},
+    {file = "cdk_lambda_subminute-2.0.284-py3-none-any.whl", hash = "sha256:380d292cf10b7ac07ef49fa3a05ad7b43a006d98f1a879d3af4173db7e6b2a74"},
+    {file = "cdk_lambda_subminute-2.0.284.tar.gz", hash = "sha256:c033318464ef78db630c6b9119af2370b264185f0633e51880162528dd0d0542"},
 ]
 certifi = [
     {file = "certifi-2023.7.22-py3-none-any.whl", hash = "sha256:92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"},
