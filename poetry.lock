@@ -598,7 +598,7 @@ requests = ">=2.16.0"
 
 [[package]]
 name = "test234"
-version = "2.7.3"
+version = "2.7.4"
 description = ""
 category = "main"
 optional = false
@@ -612,8 +612,8 @@ uvicorn = "^0.23.2"
 [package.source]
 type = "git"
 url = "https://github.com/PJ-Schulz/test234.git"
-reference = "2.7.3"
-resolved_reference = "6e52dfd09f7b7c5b97732bbb53f80560546224d0"
+reference = "2.7.4"
+resolved_reference = "9297fa0c170ffbbe8fb6bc1154b0b1c68b500c25"
 
 [[package]]
 name = "tomli"
@@ -693,7 +693,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "f4658886cf097207833d3f024aa99d32ad38c6bb34e8041383f9018fb6863849"
+content-hash = "d42fbe3d8ab2aeabf38a51b060a4fd8e1a0c9a04560393f1bc3f98f1c2b01e27"
 
 [metadata.files]
 annotated-types = [
