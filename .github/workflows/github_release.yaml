@@ -7,12 +7,14 @@ on:
   # workflow_run:
   #   workflows: ["Version Increase after Dependency Update"]
   #   types: [completed]
+  push:
+    branches: [main]
 
 jobs:
   github_release:
     if: >
       (github.event_name == 'pull_request' && github.event.pull_request.merged == true) ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+      (github.event_name == 'push' && github.event.push.head_commit.message == *'Increase version to'*)
     # if: ${{  }}
     runs-on: ubuntu-latest
     permissions:

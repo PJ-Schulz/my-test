@@ -1,0 +1,60 @@
+name: Version Increase
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  bump-version:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Install poetry
+        run: pip install poetry==1.2.2
+        shell: bash
+
+      - name: Check if PR is dependency update
+        id: check
+        run: |
+          CHANGES=$(gh pr view ${{ github.event.pull_request.number }} --json title -q .title)
+          if [[ "$CHANGES" == *'chore(deps): update dependency'* || "$CHANGES" == *'fix(deps): update dependency'* ]]; then
+            echo "Dependency update detected. Proceeding to version bump..."
+            echo "DEPENDENCY_UPDATE=True" >> "$GITHUB_OUTPUT"
+          else
+            echo "No dependency update detected. Exiting."
+            echo "DEPENDENCY_UPDATE=False" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Bump version in pyproject.toml
+        id: version
+        if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
+        run: |
+          poetry version patch
+          echo NEW_VERSION=$(poetry version --short) >> "$GITHUB_OUTPUT"
+
+      - name: Commit files
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add pyproject.toml
+          git commit -m "Increase version to ${{ steps.version.outputs.NEW_VERSION }}"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
