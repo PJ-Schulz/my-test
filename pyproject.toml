@@ -13,7 +13,7 @@ trio = "^0.21.0"
 tccli-intl-en = "^3.0.811.0"
 cdk-lambda-subminute = "^2.0.276"
 cdk-aurora-globaldatabase = "2.3.319"
-test234 = {git = "https://github.com/PJ-Schulz/test234.git", tag = "2.7.3"}
+test234 = {git = "https://github.com/PJ-Schulz/test234.git", tag = "2.7.4"}
 redis = {git = "https://github.com/redis/redis-py.git", tag = "v5.0.1"}
 
 [tool.poetry.group.dev.dependencies]
