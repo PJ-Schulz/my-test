@@ -19,26 +19,19 @@ jobs:
           python-version: "3.9"
       - name: Python Poetry Action
         uses: abatilo/actions-poetry@v2.3.0
-      - name: Set env
-        run: echo "POETRY_NEW=$(poetry version --short)" >> $GITHUB_ENV
 
-      - name: 'Get Previous tag1'
-        id: tag1
+      - name: Get Poetry Tag
+        id: poetryTag
+        run: echo "POETRY_TAG=$(poetry version --short)" >> $GITHUB_ENV
+      - name: 'Get Latest Tag'
+        id: latestTag
         uses: JinoArch/get-latest-tag@latest
-      - run: echo "${{ steps.tag1.outputs.latestTag  }}"
-      - run: echo "${{ steps.tag1.outputs.previousTag   }}"
-
-
-      - name: 'Get Previous tag2'
-        id: tag2
-        uses: younited/get-previous-tag-action@v1.0.0
-      - run: echo "${{ steps.tag2.outputs.previous-tag  }}"
-
 
       - uses: ncipollo/release-action@v1
+        if: steps.poetryTag.outputs.POETRY_TAG != steps.latestTag.outputs.latestTag
         with:
-          tag: ${{ env.POETRY_NEW }}
-          name: "v.${{ env.POETRY_NEW }}"
+          tag: ${{ steps.poetryTag.outputs.POETRY_TAG }}
+          name: "v.${{ steps.poetryTag.outputs.POETRY_TAG }}"
           commit: main
           generateReleaseNotes: true
           token: ${{ github.token }}
