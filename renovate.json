@@ -31,14 +31,5 @@
       "matchFileNames": ["pyproject.toml", "poetry.lock"],
       "automerge": true
     }
-  ],
-  "postUpgradeTasks": {
-    "commands": [
-      "poetry version patch"
-    ],
-    "fileFilters": [
-      "pyproject.toml"
-    ],
-    "executionMode": "branch"
-  }
+  ]
 }
