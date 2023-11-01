@@ -13,7 +13,7 @@ jobs:
   test-job-03:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo "Hello World 3"
 
       - run: echo "${{github.event_name}}"
