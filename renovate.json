@@ -8,6 +8,7 @@
   "platformAutomerge": true,
   "ignoreTests": false,
   "timezone": "Europe/Berlin",
+  "prHourlyLimit": 0,
   "schedule": [
     "* * * * *"
   ],
