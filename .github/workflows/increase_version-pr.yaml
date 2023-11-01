@@ -62,4 +62,4 @@ jobs:
         if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
         run: gh pr merge --merge --auto --delete-branch bumb-version
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.PAT }}
