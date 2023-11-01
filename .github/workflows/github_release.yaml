@@ -4,30 +4,15 @@ on:
   pull_request:
     types: [closed]
     branches: [main]
-  workflow_run:
-    workflows: ["Version Increase after Dependency Update"]
-    types: [completed]
-  push:
-    branches: [main]
 
 jobs:
   github_release:
-    if: >
-      (github.event_name == 'pull_request' && github.event.pull_request.merged == true) ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
-      (github.event_name == 'push' && github.event.push.head_commit.message == 'Increase version')
-    # if: ${{  }}
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v3
-
-      - run: echo "${{github.event_name}}"
-      - run: echo "${{github.ref}}"
-      - run: echo "${{github.actor}}"
-      - run: echo "${{github.workflow}}"
-
       - name: Setup Python
         uses: actions/setup-python@v2.3.4
         with:
@@ -37,10 +22,18 @@ jobs:
       - name: Set env
         run: echo "POETRY_NEW=$(poetry version --short)" >> $GITHUB_ENV
 
-      - name: 'Get Previous tag'
-        id: previoustag
-        uses: "WyriHaximus/github-action-get-previous-tag@v1"
-      - run: echo "${{ steps.previoustag.outputs.tag }}"
+      - name: 'Get Previous tag1'
+        id: tag1
+        uses: JinoArch/get-latest-tag@latest
+      - run: echo "${{ steps.tag1.outputs.latestTag  }}"
+      - run: echo "${{ steps.tag1.outputs.previousTag   }}"
+
+
+      - name: 'Get Previous tag2'
+        id: tag2
+        uses: younited/get-previous-tag-action@v1.0.0
+      - run: echo "${{ steps.tag2.outputs.previous-tag  }}"
+
 
       - uses: ncipollo/release-action@v1
         with:
