@@ -60,6 +60,6 @@ jobs:
 
       - name: Pull Request Automerge
         if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
-        run: gh pr merge --merge --admin --delete-branch bumb-version
+        run: gh pr merge --merge --auto --delete-branch bumb-version
         env:
           GH_TOKEN: ${{ github.token }}
