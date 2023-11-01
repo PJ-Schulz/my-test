@@ -1,0 +1,21 @@
+name: Test03
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - "main"
+  push:
+    branches:
+      - "main"
+
+jobs:
+  test-job-03:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Hello World 3"
+
+      - run: echo "${{ toJson(github.event) }}"
+
+      - run: echo "${{ toJson(github.event.type) }}"
