@@ -31,7 +31,7 @@ jobs:
 
       - name: 'Get Previous tag2'
         id: tag2
-        uses: younited/get-previous-tag-action@v1.0.0
+        uses: younited/get-previous-tag-action@v1.1.0
       - run: echo "${{ steps.tag2.outputs.previous-tag  }}"
 
 
