@@ -6,11 +6,12 @@ on:
     branches: [main]
 
 jobs:
-  github_release:
+  get_tags:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    outputs:
+      poetryTag: ${{ steps.poetryTag.outputs.poetryTag }}
+      latestTag: ${{ steps.latestTag.outputs.latestTag }}
     steps:
       - uses: actions/checkout@v3
       - name: Setup Python
@@ -22,13 +23,20 @@ jobs:
 
       - name: Get Poetry Tag
         id: poetryTag
-        run: echo "POETRY_TAG=$(poetry version --short)" >> $GITHUB_ENV
+        run: echo "poetryTag=$(poetry version --short)" >> $GITHUB_ENV
+
       - name: 'Get Latest Tag'
         id: latestTag
         uses: JinoArch/get-latest-tag@latest
 
+  make_release:
+    needs: ["get_tags"]
+    if: jobs.get_tags.outputs.poetryTag != jobs.get_tags.outputs.latestTag
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
       - uses: ncipollo/release-action@v1
-        if: steps.poetryTag.outputs.POETRY_TAG != steps.latestTag.outputs.latestTag
         with:
           tag: ${{ steps.poetryTag.outputs.POETRY_TAG }}
           name: "v.${{ steps.poetryTag.outputs.POETRY_TAG }}"
