@@ -46,7 +46,8 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           commit-message: Increase version
-          committer: GitHub <noreply@github.com>
+          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           add-paths: |
             pyproject.toml
           title: Increase version

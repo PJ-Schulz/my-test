@@ -3,6 +3,9 @@ name: Hello World
 on:
   pull_request:
     branches: [main]
+  workflow_run:
+    workflows: ["Version Increase after Dependency Update"]
+    types: [completed]
 
 jobs:
   check_version:
