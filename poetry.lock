@@ -25,6 +25,14 @@ test = ["anyio[trio]", "coverage[toml] (>=7)", "hypothesis (>=4.0)", "psutil (>=
 trio = ["trio (>=0.22)"]
 
 [[package]]
+name = "async-generator"
+version = "1.10"
+description = "Async generators and context managers for Python 3.5+"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
 name = "async-timeout"
 version = "4.0.3"
 description = "Timeout context manager for asyncio programs"
@@ -127,7 +135,7 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.319"
+version = "2.3.318"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 category = "main"
 optional = false
@@ -264,7 +272,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "hypothesis"
-version = "6.88.1"
+version = "6.88.0"
 description = "A library for property-based testing"
 category = "dev"
 optional = false
@@ -321,15 +329,15 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "isort"
-version = "5.12.0"
+version = "5.11.0"
 description = "A Python utility / library to sort Python imports."
 category = "dev"
 optional = false
-python-versions = ">=3.8.0"
+python-versions = ">=3.7.0"
 
 [package.extras]
-colors = ["colorama (>=0.4.3)"]
-pipfile-deprecated-finder = ["pip-shims (>=0.5.2)", "pipreqs", "requirementslib"]
+colors = ["colorama (>=0.4.3,<0.5.0)"]
+pipfile-deprecated-finder = ["pipreqs", "requirementslib"]
 plugins = ["setuptools"]
 requirements-deprecated-finder = ["pip-api", "pipreqs"]
 
@@ -423,7 +431,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "pydantic"
-version = "2.4.2"
+version = "2.4.1"
 description = "Data validation using Python type hints"
 category = "main"
 optional = false
@@ -458,7 +466,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "pytest"
-version = "7.4.3"
+version = "7.4.2"
 description = "pytest: simple powerful testing with Python"
 category = "dev"
 optional = false
@@ -488,8 +496,8 @@ six = ">=1.5"
 
 [[package]]
 name = "redis"
-version = "5.0.1"
-description = ""
+version = "5.0.0"
+description = "Python client for Redis database and key-value store"
 category = "main"
 optional = false
 python-versions = ">=3.7"
@@ -505,8 +513,8 @@ ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"
 [package.source]
 type = "git"
 url = "https://github.com/redis/redis-py.git"
-reference = "v5.0.1"
-resolved_reference = "cc4bc1a544d1030aec1696baef2861064fa8dd1c"
+reference = "v5.0.0"
+resolved_reference = "28cc65c18cc4fb37ef14497c963eb181dba8d25d"
 
 [[package]]
 name = "requests"
@@ -590,7 +598,7 @@ requests = ">=2.16.0"
 
 [[package]]
 name = "test234"
-version = "2.7.4"
+version = "2.7.3"
 description = ""
 category = "main"
 optional = false
@@ -604,8 +612,8 @@ uvicorn = "^0.23.2"
 [package.source]
 type = "git"
 url = "https://github.com/PJ-Schulz/test234.git"
-reference = "2.7.4"
-resolved_reference = "9297fa0c170ffbbe8fb6bc1154b0b1c68b500c25"
+reference = "2.7.3"
+resolved_reference = "6e52dfd09f7b7c5b97732bbb53f80560546224d0"
 
 [[package]]
 name = "tomli"
@@ -617,16 +625,16 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "trio"
-version = "0.22.2"
+version = "0.21.0"
 description = "A friendly Python library for async concurrency and I/O"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 
 [package.dependencies]
-attrs = ">=20.1.0"
+async-generator = ">=1.9"
+attrs = ">=19.2.0"
 cffi = {version = ">=1.14", markers = "os_name == \"nt\" and implementation_name != \"pypy\""}
-exceptiongroup = {version = ">=1.0.0rc9", markers = "python_version < \"3.11\""}
 idna = "*"
 outcome = "*"
 sniffio = "*"
@@ -685,7 +693,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "87d4658ef5576d8a7e1b0628e1507481cd7bf914f864671511e8d4b02eef2ab7"
+content-hash = "775d8776b11a7040ea43125f8b78c4f7a2a1b4794157f1527b556ac5745bb091"
 
 [metadata.files]
 annotated-types = [
@@ -695,6 +703,10 @@ annotated-types = [
 anyio = [
     {file = "anyio-4.0.0-py3-none-any.whl", hash = "sha256:cfdb2b588b9fc25ede96d8db56ed50848b0b649dca3dd1df0b11f683bb9e0b5f"},
     {file = "anyio-4.0.0.tar.gz", hash = "sha256:f7ed51751b2c2add651e5747c891b47e26d2a21be5d32d9311dfe9692f3e5d7a"},
+]
+async-generator = [
+    {file = "async_generator-1.10-py3-none-any.whl", hash = "sha256:01c7bf666359b4967d2cda0000cc2e4af16a0ae098cbffcb8472fb9e8ad6585b"},
+    {file = "async_generator-1.10.tar.gz", hash = "sha256:6ebb3d106c12920aaae42ccb6f787ef5eefdcdd166ea3d628fa8476abe712144"},
 ]
 async-timeout = [
     {file = "async-timeout-4.0.3.tar.gz", hash = "sha256:4640d96be84d82d02ed59ea2b7105a0f7b33abe8703703cd0ab0bf87c427522f"},
@@ -725,8 +737,8 @@ cattrs = [
     {file = "cattrs-23.1.2.tar.gz", hash = "sha256:db1c821b8c537382b2c7c66678c3790091ca0275ac486c76f3c8f3920e83c657"},
 ]
 cdk-aurora-globaldatabase = [
-    {file = "cdk-aurora-globaldatabase-2.3.319.tar.gz", hash = "sha256:641cf584053c635c68f8c84c90ea08f206a27d17bddc9a965c70a8f7c1793fb1"},
-    {file = "cdk_aurora_globaldatabase-2.3.319-py3-none-any.whl", hash = "sha256:f77ebbc1b9bdbe8a9ee2844301d595689405646fafc0eae256fd5aba5fb1a121"},
+    {file = "cdk-aurora-globaldatabase-2.3.318.tar.gz", hash = "sha256:9fec6a514a278b231c09325f8564c36bc01cc2678be0172f195c8227180da377"},
+    {file = "cdk_aurora_globaldatabase-2.3.318-py3-none-any.whl", hash = "sha256:61e9d34fd2d39fd5f7526504431afee6afec91d109fae9d1c1ecd55a1fd811a0"},
 ]
 cdk-lambda-subminute = [
     {file = "cdk_lambda_subminute-2.0.285-py3-none-any.whl", hash = "sha256:e09f789fece7b24d23c61023456268ebd51bc65617570a74b1de19b28316cc73"},
@@ -911,8 +923,8 @@ h11 = [
     {file = "h11-0.14.0.tar.gz", hash = "sha256:8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d"},
 ]
 hypothesis = [
-    {file = "hypothesis-6.88.1-py3-none-any.whl", hash = "sha256:b45b8a651dfe4ce26f900ce6ccbce997d4fbec39ba03dd243516bf81fea8c0b8"},
-    {file = "hypothesis-6.88.1.tar.gz", hash = "sha256:f4c2c004b9ec3e0e25332ad2cb6b91eba477a855557a7b5c6e79068809ff8b51"},
+    {file = "hypothesis-6.88.0-py3-none-any.whl", hash = "sha256:b52b5b5a5065340875fb8a1a45e45391c277d9c5765374560edc1c5e5c3e2d48"},
+    {file = "hypothesis-6.88.0.tar.gz", hash = "sha256:c9096ccd5a78bbf75221a2b4a6149e00e254acb17637c94abab98c529b2f61e5"},
 ]
 idna = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
@@ -927,8 +939,8 @@ iniconfig = [
     {file = "iniconfig-2.0.0.tar.gz", hash = "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3"},
 ]
 isort = [
-    {file = "isort-5.12.0-py3-none-any.whl", hash = "sha256:f84c2818376e66cf843d497486ea8fed8700b340f308f076c6fb1229dff318b6"},
-    {file = "isort-5.12.0.tar.gz", hash = "sha256:8bef7dde241278824a6d83f44a544709b065191b95b6e50894bdc722fcba0504"},
+    {file = "isort-5.11.0-py3-none-any.whl", hash = "sha256:1b8631908ecc1b7108801801e510c4bf908962b77bd44882a3873566542f7255"},
+    {file = "isort-5.11.0.tar.gz", hash = "sha256:7aa325a6cbbc086cb74db2e9cc838a8089f8a6e1da26780d8d6d6b24e37f4e5f"},
 ]
 jmespath = [
     {file = "jmespath-0.10.0-py2.py3-none-any.whl", hash = "sha256:cdf6525904cc597730141d61b36f2e4b8ecc257c420fa2f4549bac2c2d0cb72f"},
@@ -967,8 +979,8 @@ pycparser = [
     {file = "pycparser-2.21.tar.gz", hash = "sha256:e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"},
 ]
 pydantic = [
-    {file = "pydantic-2.4.2-py3-none-any.whl", hash = "sha256:bc3ddf669d234f4220e6e1c4d96b061abe0998185a8d7855c0126782b7abc8c1"},
-    {file = "pydantic-2.4.2.tar.gz", hash = "sha256:94f336138093a5d7f426aac732dcfe7ab4eb4da243c88f891d65deb4a2556ee7"},
+    {file = "pydantic-2.4.1-py3-none-any.whl", hash = "sha256:2b2240c8d54bb8f84b88e061fac1bdfa1761c2859c367f9d3afe0ec2966deddc"},
+    {file = "pydantic-2.4.1.tar.gz", hash = "sha256:b172505886028e4356868d617d2d1a776d7af1625d1313450fd51bdd19d9d61f"},
 ]
 pydantic-core = [
     {file = "pydantic_core-2.10.1-cp310-cp310-macosx_10_7_x86_64.whl", hash = "sha256:d64728ee14e667ba27c66314b7d880b8eeb050e58ffc5fec3b7a109f8cddbd63"},
@@ -1083,8 +1095,8 @@ pyflakes = [
     {file = "pyflakes-3.0.1.tar.gz", hash = "sha256:ec8b276a6b60bd80defed25add7e439881c19e64850afd9b346283d4165fd0fd"},
 ]
 pytest = [
-    {file = "pytest-7.4.3-py3-none-any.whl", hash = "sha256:0d009c083ea859a71b76adf7c1d502e4bc170b80a8ef002da5806527b9591fac"},
-    {file = "pytest-7.4.3.tar.gz", hash = "sha256:d989d136982de4e3b29dabcc838ad581c64e8ed52c11fbe86ddebd9da0818cd5"},
+    {file = "pytest-7.4.2-py3-none-any.whl", hash = "sha256:1d881c6124e08ff0a1bb75ba3ec0bfd8b5354a01c194ddd5a0a870a48d99b002"},
+    {file = "pytest-7.4.2.tar.gz", hash = "sha256:a766259cfab564a2ad52cb1aae1b881a75c3eb7e34ca3779697c23ed47c47069"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
@@ -1125,8 +1137,8 @@ tomli = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 trio = [
-    {file = "trio-0.22.2-py3-none-any.whl", hash = "sha256:f43da357620e5872b3d940a2e3589aa251fd3f881b65a608d742e00809b1ec38"},
-    {file = "trio-0.22.2.tar.gz", hash = "sha256:3887cf18c8bcc894433420305468388dac76932e9668afa1c49aa3806b6accb3"},
+    {file = "trio-0.21.0-py3-none-any.whl", hash = "sha256:4dc0bf9d5cc78767fc4516325b6d80cc0968705a31d0eec2ecd7cdda466265b0"},
+    {file = "trio-0.21.0.tar.gz", hash = "sha256:523f39b7b69eef73501cebfe1aafd400a9aad5b03543a0eded52952488ff1c13"},
 ]
 typeguard = [
     {file = "typeguard-2.13.3-py3-none-any.whl", hash = "sha256:5e3e3be01e887e7eafae5af63d1f36c849aaa94e3a0112097312aabfa16284f1"},
