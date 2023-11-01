@@ -39,7 +39,9 @@ jobs:
 
       - name: Bump version in pyproject.toml
         if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
-        run: poetry version patch
+        run: |
+          poetry version patch
+          echo NEW_VERSION=$(poetry version --short) >> "$GITHUB_OUTPUT"
 
       - name: Create Pull Request
         if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
@@ -50,12 +52,12 @@ jobs:
           author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           add-paths: |
             pyproject.toml
-          title: Increase version
+          title: "Increase version to ${{ env.NEW_VERSION }}"
           branch: bumb-version # no whitespaces allowed
           delete-branch: true
 
       - name: Pull Request Automerge
         if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
-        run: gh pr merge --merge --auto --delete-branch bumb-version
+        run: gh pr merge --merge --delete-branch bumb-version
         env:
           GH_TOKEN: ${{ github.token }}
