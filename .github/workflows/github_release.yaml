@@ -28,10 +28,10 @@ jobs:
         uses: JinoArch/get-latest-tag@latest
 
       - uses: ncipollo/release-action@v1
-        if: steps.poetryTag.outputs.POETRY_TAG != steps.latestTag.outputs.latestTag
+        if: steps.poetryTag.outputs.poetryTag != steps.latestTag.outputs.latestTag
         with:
-          tag: ${{ steps.poetryTag.outputs.POETRY_TAG }}
-          name: "v.${{ steps.poetryTag.outputs.POETRY_TAG }}"
+          tag: ${{ env.poetryTag }}
+          name: "v.${{ env.poetryTag }}"
           commit: main
           generateReleaseNotes: true
           token: ${{ github.token }}
