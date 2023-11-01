@@ -16,6 +16,15 @@ jobs:
       - uses: actions/checkout@v3
       - run: echo "Hello World 3"
 
-      - run: echo "${{ toJson(github.event) }}"
+      - run: echo "${{github.event_name}}"
+      - run: echo "${{github.ref}}"
+      - run: echo "${{github.actor}}"
+      - run: echo "${{github.workflow}}"
 
-      - run: echo "${{ toJson(github.event.type) }}"
+      - run: echo "${{github.event.before}}"
+      - run: echo "${{github.event.after}}"
+
+      - run: echo "${{github.event.merged }}"
+      - run: echo "${{github.event.status }}"
+
+      - run: echo "${{ toJson(github.event) }}"
