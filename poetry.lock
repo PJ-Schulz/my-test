@@ -25,14 +25,6 @@ test = ["anyio[trio]", "coverage[toml] (>=7)", "hypothesis (>=4.0)", "psutil (>=
 trio = ["trio (>=0.22)"]
 
 [[package]]
-name = "async-generator"
-version = "1.10"
-description = "Async generators and context managers for Python 3.5+"
-category = "main"
-optional = false
-python-versions = ">=3.5"
-
-[[package]]
 name = "async-timeout"
 version = "4.0.3"
 description = "Timeout context manager for asyncio programs"
@@ -135,7 +127,7 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.318"
+version = "2.3.319"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 category = "main"
 optional = false
@@ -329,15 +321,15 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "isort"
-version = "5.11.0"
+version = "5.12.0"
 description = "A Python utility / library to sort Python imports."
 category = "dev"
 optional = false
-python-versions = ">=3.7.0"
+python-versions = ">=3.8.0"
 
 [package.extras]
-colors = ["colorama (>=0.4.3,<0.5.0)"]
-pipfile-deprecated-finder = ["pipreqs", "requirementslib"]
+colors = ["colorama (>=0.4.3)"]
+pipfile-deprecated-finder = ["pip-shims (>=0.5.2)", "pipreqs", "requirementslib"]
 plugins = ["setuptools"]
 requirements-deprecated-finder = ["pip-api", "pipreqs"]
 
@@ -431,7 +423,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "pydantic"
-version = "2.4.1"
+version = "2.4.2"
 description = "Data validation using Python type hints"
 category = "main"
 optional = false
@@ -513,8 +505,8 @@ ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"
 [package.source]
 type = "git"
 url = "https://github.com/redis/redis-py.git"
-reference = "v5.0.0"
-resolved_reference = "28cc65c18cc4fb37ef14497c963eb181dba8d25d"
+reference = "v5.0.1"
+resolved_reference = "cc4bc1a544d1030aec1696baef2861064fa8dd1c"
 
 [[package]]
 name = "requests"
@@ -625,16 +617,16 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "trio"
-version = "0.21.0"
+version = "0.22.2"
 description = "A friendly Python library for async concurrency and I/O"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 
 [package.dependencies]
-async-generator = ">=1.9"
-attrs = ">=19.2.0"
+attrs = ">=20.1.0"
 cffi = {version = ">=1.14", markers = "os_name == \"nt\" and implementation_name != \"pypy\""}
+exceptiongroup = {version = ">=1.0.0rc9", markers = "python_version < \"3.11\""}
 idna = "*"
 outcome = "*"
 sniffio = "*"
@@ -693,7 +685,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "d42fbe3d8ab2aeabf38a51b060a4fd8e1a0c9a04560393f1bc3f98f1c2b01e27"
+content-hash = "a773098303bb0dcadc50e37af00f12ec6ba4ed828f8910b2a8aeb4e1324a2197"
 
 [metadata.files]
 annotated-types = [
@@ -703,10 +695,6 @@ annotated-types = [
 anyio = [
     {file = "anyio-4.0.0-py3-none-any.whl", hash = "sha256:cfdb2b588b9fc25ede96d8db56ed50848b0b649dca3dd1df0b11f683bb9e0b5f"},
     {file = "anyio-4.0.0.tar.gz", hash = "sha256:f7ed51751b2c2add651e5747c891b47e26d2a21be5d32d9311dfe9692f3e5d7a"},
-]
-async-generator = [
-    {file = "async_generator-1.10-py3-none-any.whl", hash = "sha256:01c7bf666359b4967d2cda0000cc2e4af16a0ae098cbffcb8472fb9e8ad6585b"},
-    {file = "async_generator-1.10.tar.gz", hash = "sha256:6ebb3d106c12920aaae42ccb6f787ef5eefdcdd166ea3d628fa8476abe712144"},
 ]
 async-timeout = [
     {file = "async-timeout-4.0.3.tar.gz", hash = "sha256:4640d96be84d82d02ed59ea2b7105a0f7b33abe8703703cd0ab0bf87c427522f"},
@@ -737,8 +725,8 @@ cattrs = [
     {file = "cattrs-23.1.2.tar.gz", hash = "sha256:db1c821b8c537382b2c7c66678c3790091ca0275ac486c76f3c8f3920e83c657"},
 ]
 cdk-aurora-globaldatabase = [
-    {file = "cdk-aurora-globaldatabase-2.3.318.tar.gz", hash = "sha256:9fec6a514a278b231c09325f8564c36bc01cc2678be0172f195c8227180da377"},
-    {file = "cdk_aurora_globaldatabase-2.3.318-py3-none-any.whl", hash = "sha256:61e9d34fd2d39fd5f7526504431afee6afec91d109fae9d1c1ecd55a1fd811a0"},
+    {file = "cdk-aurora-globaldatabase-2.3.319.tar.gz", hash = "sha256:641cf584053c635c68f8c84c90ea08f206a27d17bddc9a965c70a8f7c1793fb1"},
+    {file = "cdk_aurora_globaldatabase-2.3.319-py3-none-any.whl", hash = "sha256:f77ebbc1b9bdbe8a9ee2844301d595689405646fafc0eae256fd5aba5fb1a121"},
 ]
 cdk-lambda-subminute = [
     {file = "cdk_lambda_subminute-2.0.285-py3-none-any.whl", hash = "sha256:e09f789fece7b24d23c61023456268ebd51bc65617570a74b1de19b28316cc73"},
@@ -939,8 +927,8 @@ iniconfig = [
     {file = "iniconfig-2.0.0.tar.gz", hash = "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3"},
 ]
 isort = [
-    {file = "isort-5.11.0-py3-none-any.whl", hash = "sha256:1b8631908ecc1b7108801801e510c4bf908962b77bd44882a3873566542f7255"},
-    {file = "isort-5.11.0.tar.gz", hash = "sha256:7aa325a6cbbc086cb74db2e9cc838a8089f8a6e1da26780d8d6d6b24e37f4e5f"},
+    {file = "isort-5.12.0-py3-none-any.whl", hash = "sha256:f84c2818376e66cf843d497486ea8fed8700b340f308f076c6fb1229dff318b6"},
+    {file = "isort-5.12.0.tar.gz", hash = "sha256:8bef7dde241278824a6d83f44a544709b065191b95b6e50894bdc722fcba0504"},
 ]
 jmespath = [
     {file = "jmespath-0.10.0-py2.py3-none-any.whl", hash = "sha256:cdf6525904cc597730141d61b36f2e4b8ecc257c420fa2f4549bac2c2d0cb72f"},
@@ -979,8 +967,8 @@ pycparser = [
     {file = "pycparser-2.21.tar.gz", hash = "sha256:e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"},
 ]
 pydantic = [
-    {file = "pydantic-2.4.1-py3-none-any.whl", hash = "sha256:2b2240c8d54bb8f84b88e061fac1bdfa1761c2859c367f9d3afe0ec2966deddc"},
-    {file = "pydantic-2.4.1.tar.gz", hash = "sha256:b172505886028e4356868d617d2d1a776d7af1625d1313450fd51bdd19d9d61f"},
+    {file = "pydantic-2.4.2-py3-none-any.whl", hash = "sha256:bc3ddf669d234f4220e6e1c4d96b061abe0998185a8d7855c0126782b7abc8c1"},
+    {file = "pydantic-2.4.2.tar.gz", hash = "sha256:94f336138093a5d7f426aac732dcfe7ab4eb4da243c88f891d65deb4a2556ee7"},
 ]
 pydantic-core = [
     {file = "pydantic_core-2.10.1-cp310-cp310-macosx_10_7_x86_64.whl", hash = "sha256:d64728ee14e667ba27c66314b7d880b8eeb050e58ffc5fec3b7a109f8cddbd63"},
@@ -1137,8 +1125,8 @@ tomli = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 trio = [
-    {file = "trio-0.21.0-py3-none-any.whl", hash = "sha256:4dc0bf9d5cc78767fc4516325b6d80cc0968705a31d0eec2ecd7cdda466265b0"},
-    {file = "trio-0.21.0.tar.gz", hash = "sha256:523f39b7b69eef73501cebfe1aafd400a9aad5b03543a0eded52952488ff1c13"},
+    {file = "trio-0.22.2-py3-none-any.whl", hash = "sha256:f43da357620e5872b3d940a2e3589aa251fd3f881b65a608d742e00809b1ec38"},
+    {file = "trio-0.22.2.tar.gz", hash = "sha256:3887cf18c8bcc894433420305468388dac76932e9668afa1c49aa3806b6accb3"},
 ]
 typeguard = [
     {file = "typeguard-2.13.3-py3-none-any.whl", hash = "sha256:5e3e3be01e887e7eafae5af63d1f36c849aaa94e3a0112097312aabfa16284f1"},
