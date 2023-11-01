@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.9"
       - name: Python Poetry Action
-        uses: abatilo/actions-poetry@v2.2.0
+        uses: abatilo/actions-poetry@v2.3.0
       - name: Set env
         run: echo "POETRY_NEW=$(poetry version --short)" >> $GITHUB_ENV
 
