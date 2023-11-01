@@ -44,14 +44,14 @@ jobs:
         if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
         run: |
           poetry version patch
-          echo NEW_VERSION=$(poetry version --short) >> "$GITHUB_OUTPUT"
+        # echo NEW_VERSION=$(poetry version --short) >> "$GITHUB_OUTPUT"
 
       - name: Commit files
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add pyproject.toml
-          git commit -m "Increase version to ${{ steps.version.outputs.NEW_VERSION }}"
+          git commit -m "Increase version"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
