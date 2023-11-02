@@ -142,7 +142,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk-lambda-subminute"
-version = "2.0.285"
+version = "2.0.286"
 description = "A construct for deploying a Lambda function that can be invoked every time unit less than one minute."
 category = "main"
 optional = false
@@ -488,8 +488,8 @@ six = ">=1.5"
 
 [[package]]
 name = "redis"
-version = "5.0.0"
-description = "Python client for Redis database and key-value store"
+version = "5.0.1"
+description = ""
 category = "main"
 optional = false
 python-versions = ">=3.7"
@@ -729,8 +729,8 @@ cdk-aurora-globaldatabase = [
     {file = "cdk_aurora_globaldatabase-2.3.319-py3-none-any.whl", hash = "sha256:f77ebbc1b9bdbe8a9ee2844301d595689405646fafc0eae256fd5aba5fb1a121"},
 ]
 cdk-lambda-subminute = [
-    {file = "cdk_lambda_subminute-2.0.285-py3-none-any.whl", hash = "sha256:e09f789fece7b24d23c61023456268ebd51bc65617570a74b1de19b28316cc73"},
-    {file = "cdk_lambda_subminute-2.0.285.tar.gz", hash = "sha256:0b945407ecf01e014880ab89e156d782a74f1357b11d74b33a6233257ef60588"},
+    {file = "cdk_lambda_subminute-2.0.286-py3-none-any.whl", hash = "sha256:53055ba79ae146059c557a0c8e2ada796ff5e3c6e587ae24adfd865c512a6a00"},
+    {file = "cdk_lambda_subminute-2.0.286.tar.gz", hash = "sha256:5ff2fb49f68d7f0528ab82de1237b9018eb1d4e9e520fe83b4ebb00ec2b76c5d"},
 ]
 certifi = [
     {file = "certifi-2023.7.22-py3-none-any.whl", hash = "sha256:92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"},
