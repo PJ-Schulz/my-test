@@ -127,7 +127,7 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.319"
+version = "2.3.320"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 category = "main"
 optional = false
@@ -685,7 +685,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "a773098303bb0dcadc50e37af00f12ec6ba4ed828f8910b2a8aeb4e1324a2197"
+content-hash = "b01af481f24c53c497f010d06afa8fd7dfcc1becde471246c7b9ea02eb3a5db9"
 
 [metadata.files]
 annotated-types = [
@@ -725,8 +725,8 @@ cattrs = [
     {file = "cattrs-23.1.2.tar.gz", hash = "sha256:db1c821b8c537382b2c7c66678c3790091ca0275ac486c76f3c8f3920e83c657"},
 ]
 cdk-aurora-globaldatabase = [
-    {file = "cdk-aurora-globaldatabase-2.3.319.tar.gz", hash = "sha256:641cf584053c635c68f8c84c90ea08f206a27d17bddc9a965c70a8f7c1793fb1"},
-    {file = "cdk_aurora_globaldatabase-2.3.319-py3-none-any.whl", hash = "sha256:f77ebbc1b9bdbe8a9ee2844301d595689405646fafc0eae256fd5aba5fb1a121"},
+    {file = "cdk-aurora-globaldatabase-2.3.320.tar.gz", hash = "sha256:09e9f9985a79bb91b61aba0a577166532be025a957227150278d8db1786b915f"},
+    {file = "cdk_aurora_globaldatabase-2.3.320-py3-none-any.whl", hash = "sha256:259083628d9667383592117f3fc1df4a480c1b1af05e8ec8a54b49604d0ca26b"},
 ]
 cdk-lambda-subminute = [
     {file = "cdk_lambda_subminute-2.0.286-py3-none-any.whl", hash = "sha256:53055ba79ae146059c557a0c8e2ada796ff5e3c6e587ae24adfd865c512a6a00"},
