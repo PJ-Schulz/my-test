@@ -26,7 +26,7 @@ jobs:
         id: check
         run: |
           CHANGES=$(gh pr view ${{ github.event.pull_request.number }} --json title -q .title)
-          if [[ "$CHANGES" == *'chore(deps): update dependency'* || "$CHANGES" == *'fix(deps): update dependency'* ]]; then
+          if [[ "$CHANGES" == *'fix(deps): update dependency'* ]]; then
             echo "Dependency update detected. Proceeding to version bump..."
             echo "DEPENDENCY_UPDATE=True" >> "$GITHUB_OUTPUT"
           else
