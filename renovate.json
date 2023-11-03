@@ -9,10 +9,11 @@
   "ignoreTests": false,
   "timezone": "Europe/Berlin",
   "schedule": [
-    "before 4am"
+    "after 10pm every weekday",
+    "before 5am every weekday"
   ],
   "automergeSchedule": [
-    "before 4am"
+    "at any time"
   ],
   "hostRules": [
     {
