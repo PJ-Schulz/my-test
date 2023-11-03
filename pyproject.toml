@@ -21,7 +21,7 @@ pytest = "7.4.3"
 hypothesis = "6.88.1"
 flake8 = "6.1.0"
 isort = "5.12.0"
-pepperize-cdk-ses-smtp-credentials = "0.3.540"
+pepperize-cdk-ses-smtp-credentials = "0.3.541"
 pepperize-cdk-organizations = "0.7.728"
 
 [build-system]
