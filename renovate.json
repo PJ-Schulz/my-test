@@ -3,7 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "labels": ["dependency"],
   "rebaseWhen": "behind-base-branch",
   "platformAutomerge": true,
   "ignoreTests": false,
@@ -33,6 +32,7 @@
     {
       "matchFileNames": ["pyproject.toml", "poetry.lock"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "labels": ["dependency"],
       "automerge": true
     },
     {

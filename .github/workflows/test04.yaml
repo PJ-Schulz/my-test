@@ -1,4 +1,4 @@
-name: Test03
+name: Test04
 
 on:
   pull_request:
@@ -10,8 +10,11 @@ on:
       - "main"
 
 jobs:
-  test-job-03:
+  test-job-04:
     runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'pull_request' &&
+      (!contains(github.event.head_commit.message, 'fix(deps)') || !contains(github.event.head_commit.message, 'chore(deps)'))
     steps:
       - uses: actions/checkout@v3
       - run: echo "Hello World 3"
