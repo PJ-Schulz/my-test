@@ -554,7 +554,7 @@ full = ["httpx (>=0.22.0)", "itsdangerous", "jinja2", "python-multipart", "pyyam
 
 [[package]]
 name = "test234"
-version = "2.7.4"
+version = "2.7.5"
 description = ""
 category = "main"
 optional = false
@@ -568,8 +568,8 @@ uvicorn = "^0.23.2"
 [package.source]
 type = "git"
 url = "https://github.com/PJ-Schulz/test234.git"
-reference = "2.7.4"
-resolved_reference = "9297fa0c170ffbbe8fb6bc1154b0b1c68b500c25"
+reference = "2.7.5"
+resolved_reference = "35c0238dab7c8bc5d6aeac4801714a33e23f20e4"
 
 [[package]]
 name = "tomli"
@@ -635,7 +635,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c99d6f60c6f0691e90130bdb5a3aef78a2274eec07073d4f64caa3be8cf17f9d"
+content-hash = "8eb2f12c22034d1fc53e7b2a8141917bbe0ab1973440aac9d50d79a335cdc8c8"
 
 [metadata.files]
 annotated-types = [
