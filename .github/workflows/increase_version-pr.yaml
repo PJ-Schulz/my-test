@@ -7,12 +7,13 @@ on:
 
 jobs:
   bump-version:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    if: >
+      github.event.pull_request.merged == true ||
+      contains(github.event.pull_request.title, 'fix(deps)')
     permissions: write-all
-
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install Python
         uses: actions/setup-python@v4
@@ -22,30 +23,13 @@ jobs:
         run: pip install poetry==1.2.2
         shell: bash
 
-      - name: Check if PR is dependency update
-        id: check
-        run: |
-          CHANGES=$(gh pr view ${{ github.event.pull_request.number }} --json title -q .title)
-          if [[ "$CHANGES" == *'fix(deps): update dependency'* ]]; then
-            echo "Dependency update detected. Proceeding to version bump..."
-            echo "DEPENDENCY_UPDATE=True" >> "$GITHUB_OUTPUT"
-          else
-            echo "No dependency update detected. Exiting."
-            echo "DEPENDENCY_UPDATE=False" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-        env:
-          GH_TOKEN: ${{ github.token }}
-
       - name: Bump version in pyproject.toml
         id: version
-        if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
         run: |
           poetry version patch
           echo NEW_VERSION=$(poetry version --short) >> "$GITHUB_OUTPUT"
 
       - name: Create Pull Request
-        if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.PAT }}
@@ -59,7 +43,6 @@ jobs:
           delete-branch: true
 
       - name: Pull Request Automerge
-        if: steps.check.outputs.DEPENDENCY_UPDATE == 'True'
         run: gh pr merge --merge --auto --delete-branch bumb-version
         env:
           GH_TOKEN: ${{ secrets.PAT }}

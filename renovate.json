@@ -31,16 +31,22 @@
   "packageRules": [
     {
       "matchFileNames": ["pyproject.toml", "poetry.lock"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["major-dependency-update"],
+      "automerge": false
+    },
+    {
+      "matchFileNames": ["pyproject.toml", "poetry.lock"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "labels": ["dependency"],
       "automerge": true
     },
     {
-      "matchDepTypes": ["devDependencies"],
       "matchFileNames": ["pyproject.toml", "poetry.lock"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "labels": ["dev-dependency-update"],
-      "automerge": true
+      "automerge": true,
+      "matchDepTypes": ["devDependencies"]
     }
   ]
 }

@@ -1,16 +1,13 @@
-name: Test04
+name: Test05
 
 on:
   pull_request:
     types: [closed]
     branches:
       - "main"
-  push:
-    branches:
-      - "main"
 
 jobs:
-  test-job-04:
+  test-job-05:
     runs-on: ubuntu-latest
     if: >
       github.event_name == 'pull_request' &&

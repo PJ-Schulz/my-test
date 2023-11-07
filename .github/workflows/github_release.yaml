@@ -4,22 +4,40 @@ on:
   pull_request:
     types: [closed]
     branches: [main]
+    paths:
+      - "pyproject.toml"
+  # workflow_run:
+  #   workflows: ["Version Increase after Dependency Update"]
+  #   types: [completed]
 
 jobs:
   github_release:
-    if: github.event.pull_request.merged == true
+    # 1. event_name == 'pull_request'
+    #   a. only if pull_request was merged. (other option is closed without merge).
+    #   b. if it was NOT a renovate pull request (checking pt title with *fix(deps)*).
+    #   c. if it was NOT a renovate pull request (checking pt title with *chore(deps)*).
+    # 2. event_name == 'workflow_run'
+    #   a. The workflow was run successfully without error
+    if: >
+      (github.event_name == 'pull_request' && (
+        github.event.pull_request.merged == true &&
+        !contains(github.event.pull_request.title, 'fix(deps)') &&
+        !contains(github.event.pull_request.title, 'chore(deps)'))) ||
+      (github.event_name == 'workflow_run' &&
+        github.event.workflow_run.conclusion == 'success')
+
+    # if: ${{  }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v2.3.4
         with:
           python-version: "3.9"
       - name: Python Poetry Action
         uses: abatilo/actions-poetry@v2.3.0
-
       - name: Set env
         run: echo "POETRY_NEW=$(poetry version --short)" >> $GITHUB_ENV
 
