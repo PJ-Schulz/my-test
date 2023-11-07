@@ -32,7 +32,7 @@
     {
       "matchFileNames": ["pyproject.toml", "poetry.lock"],
       "matchUpdateTypes": ["major"],
-      "labels": ["major-dependency-update"],
+      "labels": ["major-dependency"],
       "automerge": false
     },
     {
@@ -44,7 +44,7 @@
     {
       "matchFileNames": ["pyproject.toml", "poetry.lock"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "labels": ["dev-dependency-update"],
+      "labels": ["dev-dependency"],
       "automerge": true,
       "matchDepTypes": ["devDependencies"]
     }

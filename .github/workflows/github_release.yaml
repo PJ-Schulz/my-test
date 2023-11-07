@@ -21,8 +21,9 @@ jobs:
     if: >
       (github.event_name == 'pull_request' && (
         github.event.pull_request.merged == true &&
-        !contains(github.event.pull_request.title, 'fix(deps)') &&
-        !contains(github.event.pull_request.title, 'chore(deps)'))) ||
+        !contains(github.event.pull_request.labels.*.name, 'dependency') &&
+        !contains(github.event.pull_request.labels.*.name, 'dev-dependency') &&
+        !contains(github.event.pull_request.labels.*.name, 'major-dependency') )) ||
       (github.event_name == 'workflow_run' &&
         github.event.workflow_run.conclusion == 'success')
 

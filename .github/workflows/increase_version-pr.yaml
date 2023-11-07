@@ -9,8 +9,8 @@ jobs:
   bump-version:
     runs-on: ubuntu-latest
     if: >
-      github.event.pull_request.merged == true ||
-      contains(github.event.pull_request.title, 'fix(deps)')
+      github.event.pull_request.merged == true &&
+      contains(github.event.pull_request.labels.*.name, 'dependency')
     permissions: write-all
     steps:
       - uses: actions/checkout@v4
