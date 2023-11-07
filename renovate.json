@@ -8,8 +8,8 @@
   "ignoreTests": false,
   "timezone": "Europe/Berlin",
   "schedule": [
-    "after 10pm every weekday",
-    "before 5am every weekday"
+    "after 10pm",
+    "before 5am"
   ],
   "automergeSchedule": [
     "at any time"
