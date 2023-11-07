@@ -581,7 +581,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "trio"
-version = "0.23.0"
+version = "0.23.1"
 description = "A friendly Python library for async concurrency and I/O"
 category = "main"
 optional = false
@@ -635,7 +635,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "8eb2f12c22034d1fc53e7b2a8141917bbe0ab1973440aac9d50d79a335cdc8c8"
+content-hash = "b5af9693fab82670bb3771f47abec9ac065185b20248cd3652a73784f13ccab1"
 
 [metadata.files]
 annotated-types = [
@@ -971,8 +971,8 @@ tomli = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 trio = [
-    {file = "trio-0.23.0-py3-none-any.whl", hash = "sha256:213cd69a05962b1ba24d48caf08f7e7acf02bf1ebfac17c06d1248497f05795e"},
-    {file = "trio-0.23.0.tar.gz", hash = "sha256:662cfe10018018607a8e7ee191c274bcffbf9056be60b3ccb4f1790df98fc0a3"},
+    {file = "trio-0.23.1-py3-none-any.whl", hash = "sha256:bb4abb3f4af23f96679e7c8cdabb8b234520f2498550d2cf63ebfd95f2ce27fe"},
+    {file = "trio-0.23.1.tar.gz", hash = "sha256:16f89f7dcc8f7b9dcdec1fcd863e0c039af6d0f9a22f8dfd56f75d75ec73fd48"},
 ]
 typeguard = [
     {file = "typeguard-2.13.3-py3-none-any.whl", hash = "sha256:5e3e3be01e887e7eafae5af63d1f36c849aaa94e3a0112097312aabfa16284f1"},
