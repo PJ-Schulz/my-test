@@ -30,10 +30,27 @@
   ],
   "packageRules": [
     {
+      "matchDepTypes": ["dev"],
       "matchFileNames": ["pyproject.toml"],
       "matchUpdateTypes": ["major"],
-      "labels": ["major-dependency"],
+      "labels": ["dev-dependency", "major-dependency"],
       "automerge": false
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchFileNames": ["pyproject.toml"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["dependency", "major-dependency"],
+      "automerge": false
+    },
+    {
+      "matchDepTypes": ["dev"],
+      "matchFileNames": ["pyproject.toml"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "labels": ["dev-dependency"],
+      "matchPackagePatterns": ["^pepperize"],
+      "groupName": "my-nice-group",
+      "automerge": true
     },
     {
       "matchDepTypes": ["dev"],
