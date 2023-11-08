@@ -12,7 +12,7 @@ pydantic = "2.4.2"
 trio = "0.23.1"
 cdk-lambda-subminute = "2.0.292"
 cdk-aurora-globaldatabase = "2.3.325"
-test234 = {git = "https://github.com/PJ-Schulz/test234.git", tag = "2.7.5"}
+test234 = {git = "https://github.com/PJ-Schulz/test234.git", tag = "2.7.7"}
 redis = {git = "https://github.com/redis/redis-py.git", tag = "v5.0.1"}
 
 [tool.poetry.group.dev.dependencies]
