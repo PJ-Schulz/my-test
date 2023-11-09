@@ -22,7 +22,6 @@ jobs:
         shell: bash
 
       - run: |
-          source "$HOME/.poetry/env"
           echo "https://${{ secrets.PAT }}:@github.com" > $HOME/.git-credentials
           cat $HOME/.git-credentials
           git config --global credential.helper store
