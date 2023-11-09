@@ -3,6 +3,9 @@ name: Unittest
 on:
   pull_request:
     branches: [main]
+  push:
+    branches:
+      - "main"
 
 jobs:
   unittest:
@@ -20,7 +23,7 @@ jobs:
 
       - run: |
           git config --global credential.helper cache
-          echo "https://PJ-Schulz:${{ secrets.PAT }}@github.com" > $HOME/.git-credentials
+          echo "https://${{ secrets.PAT }}@github.com" > $HOME/.git-credentials
           poetry install
 
       - name: Say Hello
