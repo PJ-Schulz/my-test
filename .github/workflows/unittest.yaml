@@ -22,9 +22,13 @@ jobs:
         shell: bash
 
       - run: |
-          git config --global credential.helper cache
-          echo "https://${{ secrets.PAT }}@github.com" > $HOME/.git-credentials
+          source "$HOME/.poetry/env"
+          echo "https://${{ secrets.PAT }}:@github.com" > $HOME/.git-credentials
+          cat $HOME/.git-credentials
+          git config --global credential.helper store
+          poetry config virtualenvs.in-project true
           poetry install
+          rm -f $HOME/.git-credentials
 
       - name: Say Hello
         run: echo "Hello World"
