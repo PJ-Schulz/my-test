@@ -17,7 +17,11 @@ jobs:
       - name: Install poetry
         run: pip install poetry==1.2.2
         shell: bash
-      - run: poetry install
+
+      - run: |
+          git config --global credential.helper cache
+          echo "https://PJ-Schulz:${{ secrets.PAT }}@github.com" > $HOME/.git-credentials
+          poetry install
 
       - name: Say Hello
         run: echo "Hello World"
