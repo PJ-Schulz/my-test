@@ -8,5 +8,14 @@ jobs:
   unittest:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Install poetry
+        run: pip install poetry==1.2.2
+        shell: bash
+      - run: poetry install
+
       - name: Say Hello
         run: echo "Hello World"
