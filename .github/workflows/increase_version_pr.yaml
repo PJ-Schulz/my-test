@@ -4,13 +4,14 @@ on:
   pull_request:
     types: [closed]
     branches: [main]
+    paths: [pyproject.toml]
 
 jobs:
   bump-version:
     runs-on: ubuntu-latest
     if: >
       github.event.pull_request.merged == true &&
-      contains(github.event.pull_request.labels.*.name, 'dependency')
+      contains(github.event.pull_request.labels.*.name, 'renovate')
     permissions: write-all
     steps:
       - uses: actions/checkout@v4

@@ -3,17 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "rebaseWhen": "behind-base-branch",
-  "platformAutomerge": true,
-  "ignoreTests": false,
-  "timezone": "Europe/Berlin",
-  "schedule": [
-    "after 10pm",
-    "before 5am"
-  ],
-  "automergeSchedule": [
-    "at any time"
-  ],
   "hostRules": [
     {
       "matchHost": "https://github.com/PJ-Schulz",
@@ -28,26 +17,34 @@
       }
     }
   ],
+  "rebaseWhen": "behind-base-branch",
+  "ignoreTests": false,
+  "timezone": "Europe/Berlin",
+  "labels": ["renovate"],
+  "platformAutomerge": true,
+  "schedule": [
+    "before 5am every weekday"
+  ],
   "packageRules": [
     {
       "matchDepTypes": ["dev"],
       "matchFileNames": ["pyproject.toml"],
       "matchUpdateTypes": ["major"],
-      "labels": ["dev-dependency", "major-dependency"],
+      "addLabels": ["major"],
       "automerge": false
     },
     {
       "matchDepTypes": ["dependencies"],
       "matchFileNames": ["pyproject.toml"],
       "matchUpdateTypes": ["major"],
-      "labels": ["dependency", "major-dependency"],
+      "addLabels": ["major"],
       "automerge": false
     },
     {
       "matchDepTypes": ["dev"],
       "matchFileNames": ["pyproject.toml"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "labels": ["dev-dependency"],
+      "addLabels": ["dev", "pepperize"],
       "matchPackagePatterns": ["^pepperize"],
       "groupName": "my-nice-group",
       "automerge": true
@@ -56,14 +53,13 @@
       "matchDepTypes": ["dev"],
       "matchFileNames": ["pyproject.toml"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "labels": ["dev-dependency"],
+      "addLabels": ["dev"],
       "automerge": true
     },
     {
       "matchDepTypes": ["dependencies"],
       "matchFileNames": ["pyproject.toml"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "labels": ["dependency"],
       "automerge": true
     }
   ]

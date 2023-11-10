@@ -6,9 +6,6 @@ on:
     branches: [main]
     paths:
       - "pyproject.toml"
-  # workflow_run:
-  #   workflows: ["Version Increase after Dependency Update"]
-  #   types: [completed]
 
 jobs:
   github_release:
@@ -21,13 +18,10 @@ jobs:
     if: >
       (github.event_name == 'pull_request' && (
         github.event.pull_request.merged == true &&
-        !contains(github.event.pull_request.labels.*.name, 'dependency') &&
-        !contains(github.event.pull_request.labels.*.name, 'dev-dependency') &&
-        !contains(github.event.pull_request.labels.*.name, 'major-dependency') )) ||
+        !contains(github.event.pull_request.labels.*.name, 'renovate') )) ||
       (github.event_name == 'workflow_run' &&
         github.event.workflow_run.conclusion == 'success')
 
-    # if: ${{  }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
