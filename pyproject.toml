@@ -21,7 +21,7 @@ hypothesis = "6.88.4"
 flake8 = "6.1.0"
 isort = "5.12.0"
 pepperize-cdk-ses-smtp-credentials = "0.3.558"
-pepperize-cdk-organizations = "0.7.735"
+pepperize-cdk-organizations = "0.7.736"
 
 [build-system]
 requires = ["poetry-core"]
