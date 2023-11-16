@@ -46,7 +46,7 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "addLabels": ["dev", "pepperize"],
       "matchPackagePatterns": ["^pepperize"],
-      "groupName": "my-nice-group",
+      "groupName": "pepperize-dependencies",
       "automerge": true
     },
     {
