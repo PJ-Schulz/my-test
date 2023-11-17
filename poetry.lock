@@ -319,11 +319,11 @@ requirements-deprecated-finder = ["pip-api", "pipreqs"]
 
 [[package]]
 name = "jsii"
-version = "1.91.0"
+version = "1.92.0"
 description = "Python client for jsii runtime"
 category = "main"
 optional = false
-python-versions = "~=3.7"
+python-versions = "~=3.8"
 
 [package.dependencies]
 attrs = ">=21.2,<24.0"
@@ -332,7 +332,7 @@ importlib-resources = ">=5.2.0"
 publication = ">=0.0.3"
 python-dateutil = "*"
 typeguard = ">=2.13.3,<2.14.0"
-typing-extensions = ">=3.7,<5.0"
+typing-extensions = ">=3.8,<5.0"
 
 [[package]]
 name = "mccabe"
@@ -378,16 +378,16 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "pepperize-cdk-ses-smtp-credentials"
-version = "0.3.558"
+version = "0.3.563"
 description = "Generate SES smtp credentials for a given user and store the credentials in a SecretsManager Secret."
 category = "dev"
 optional = false
-python-versions = "~=3.7"
+python-versions = "~=3.8"
 
 [package.dependencies]
 aws-cdk-lib = ">=2.37.1,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.91.0,<2.0.0"
+jsii = ">=1.92.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
@@ -635,7 +635,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "18152fedc077b0939c375660eb3e9dd6e772a112291f76ef4425660ac6239d41"
+content-hash = "e469ab11beb5571d06034a94e0fac2600c41a963b11efc4767f5dd2ce4885f87"
 
 [metadata.files]
 annotated-types = [
@@ -785,8 +785,8 @@ isort = [
     {file = "isort-5.12.0.tar.gz", hash = "sha256:8bef7dde241278824a6d83f44a544709b065191b95b6e50894bdc722fcba0504"},
 ]
 jsii = [
-    {file = "jsii-1.91.0-py3-none-any.whl", hash = "sha256:2905a4ea030ae7289b859e97003c01f4569650b4865c51e7f83d975b95c5b20a"},
-    {file = "jsii-1.91.0.tar.gz", hash = "sha256:9600ac7d04b237ee229c74ffde65ece27202ceec5df5e7eebd88a532d2cb28d6"},
+    {file = "jsii-1.92.0-py3-none-any.whl", hash = "sha256:30deaea011e146e1d4c0dbb35bd7effd4d292cef676052e5672a825fc1aaaebf"},
+    {file = "jsii-1.92.0.tar.gz", hash = "sha256:2b5205c0fec87e1a9a9f283f60577ad172d7124bb614b8cdadc963306e1ac75f"},
 ]
 mccabe = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},
@@ -805,8 +805,8 @@ pepperize-cdk-organizations = [
     {file = "pepperize.cdk_organizations-0.7.736-py3-none-any.whl", hash = "sha256:79060835c5513395b58aef04a74d2b752fdf9137ad2ae6bbd4090999304e4f2f"},
 ]
 pepperize-cdk-ses-smtp-credentials = [
-    {file = "pepperize.cdk-ses-smtp-credentials-0.3.558.tar.gz", hash = "sha256:da78d4173121064ab731c2c958f95d641760159e73785229a2b70be70916d81e"},
-    {file = "pepperize.cdk_ses_smtp_credentials-0.3.558-py3-none-any.whl", hash = "sha256:5d923ad62fba1efa4f31b86bfa4a7f68ca63b8d572751e856a5e8d5b909417a8"},
+    {file = "pepperize.cdk-ses-smtp-credentials-0.3.563.tar.gz", hash = "sha256:e309579b0254c044141c26d3b09b49c800849625f9f16e0cd30ddefb42ce576f"},
+    {file = "pepperize.cdk_ses_smtp_credentials-0.3.563-py3-none-any.whl", hash = "sha256:0fafc2cd349054b45a0496f082a30c77820f64f0259e88b5ac5d60025234739b"},
 ]
 pluggy = [
     {file = "pluggy-1.3.0-py3-none-any.whl", hash = "sha256:d89c696a773f8bd377d18e5ecda92b7a3793cbe66c87060a6fb58c7b6e1061f7"},
