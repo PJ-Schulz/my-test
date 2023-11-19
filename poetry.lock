@@ -378,7 +378,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "pepperize-cdk-ses-smtp-credentials"
-version = "0.3.563"
+version = "0.3.565"
 description = "Generate SES smtp credentials for a given user and store the credentials in a SecretsManager Secret."
 category = "dev"
 optional = false
@@ -635,7 +635,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "2f625df86189d49892ada7fe2a20bda4782ec736ffb18030c38e594bab84dcbe"
+content-hash = "02f6bfdecc511691884a34aca2a0fc41cdfcc44a122f36e5272ba8093221d5b4"
 
 [metadata.files]
 annotated-types = [
@@ -805,8 +805,8 @@ pepperize-cdk-organizations = [
     {file = "pepperize.cdk_organizations-0.7.739-py3-none-any.whl", hash = "sha256:1e8d6df85a55ccd0da0975ee12176d1bf051253dda7a4f9a9d90fe43c9afc689"},
 ]
 pepperize-cdk-ses-smtp-credentials = [
-    {file = "pepperize.cdk-ses-smtp-credentials-0.3.563.tar.gz", hash = "sha256:e309579b0254c044141c26d3b09b49c800849625f9f16e0cd30ddefb42ce576f"},
-    {file = "pepperize.cdk_ses_smtp_credentials-0.3.563-py3-none-any.whl", hash = "sha256:0fafc2cd349054b45a0496f082a30c77820f64f0259e88b5ac5d60025234739b"},
+    {file = "pepperize.cdk-ses-smtp-credentials-0.3.565.tar.gz", hash = "sha256:9cfbfef9fccfcebc387c0bbfe1575db81041935030e7bb26583b2d87ae719154"},
+    {file = "pepperize.cdk_ses_smtp_credentials-0.3.565-py3-none-any.whl", hash = "sha256:ed5a8a215c557e6e9e0775cd8b59a88b942a88f082568eda0f28a6d8b5cf5a7f"},
 ]
 pluggy = [
     {file = "pluggy-1.3.0-py3-none-any.whl", hash = "sha256:d89c696a773f8bd377d18e5ecda92b7a3793cbe66c87060a6fb58c7b6e1061f7"},
