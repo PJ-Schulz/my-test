@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "my-test"
-version = "0.2.17"
+version = "0.2.18"
 description = ""
 authors = ["Philipp Jaschke <philipp.jaschke@schulz.st>"]
 readme = "README.md"
