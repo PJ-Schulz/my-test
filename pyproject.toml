@@ -20,8 +20,8 @@ pytest = "7.4.3"
 hypothesis = "6.90.0"
 flake8 = "6.1.0"
 isort = "5.12.0"
-pepperize-cdk-ses-smtp-credentials = "0.3.572"
-pepperize-cdk-organizations = "0.7.741"
+pepperize-cdk-ses-smtp-credentials = "0.3.575"
+pepperize-cdk-organizations = "0.7.742"
 
 [build-system]
 requires = ["poetry-core"]
