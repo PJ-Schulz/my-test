@@ -142,7 +142,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk-lambda-subminute"
-version = "2.0.309"
+version = "2.0.310"
 description = "A construct for deploying a Lambda function that can be invoked every time unit less than one minute."
 category = "main"
 optional = false
@@ -635,7 +635,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "a897c3ffd64e5fe500e5583bee7ce38c5f85fa36d4ce7e47d6f17fa7cbd646b8"
+content-hash = "c6d54bdcaadc366e1e9e1b499ae0f61f5e34a5e3945b889e9853080c9a3869ce"
 
 [metadata.files]
 annotated-types = [
@@ -679,8 +679,8 @@ cdk-aurora-globaldatabase = [
     {file = "cdk_aurora_globaldatabase-2.3.341-py3-none-any.whl", hash = "sha256:3b3d9c4ac4422a39d7405b5334fca90bbe41a4abff4486aa9d050c1de78e80fc"},
 ]
 cdk-lambda-subminute = [
-    {file = "cdk_lambda_subminute-2.0.309-py3-none-any.whl", hash = "sha256:c9276323f6bc09dd96b98b4026593ee685c69cbe1f623b1b14ccedfd17e2d1ed"},
-    {file = "cdk_lambda_subminute-2.0.309.tar.gz", hash = "sha256:8bf05d6676df2e514de854986724f9b1ed155423b07670a28e210e241a9c1f6e"},
+    {file = "cdk_lambda_subminute-2.0.310-py3-none-any.whl", hash = "sha256:bb39227e2779d228e2a4ef85a0367df2234de3513b64a662680bbb7fef0015e0"},
+    {file = "cdk_lambda_subminute-2.0.310.tar.gz", hash = "sha256:aa3bc6e61a6caa2a9c2f6632db8ca9d0fe74521afae3da6898b17cc06e129ad8"},
 ]
 cffi = [
     {file = "cffi-1.16.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:6b3d6606d369fc1da4fd8c357d026317fbb9c9b75d36dc16e90e84c26854b088"},
