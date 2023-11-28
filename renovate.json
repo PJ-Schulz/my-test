@@ -1,66 +1,118 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "hostRules": [
     {
-      "matchHost": "https://github.com/PJ-Schulz",
       "encrypted": {
         "token": "wcFMA/xDdHCJBTolARAAiUz7+oFTBykDtbzPv9Y8REDLBUVpXXi8S32j/HTp79RCEA86ol6YwzX4sLjGr/3oa/nUSdSj3ClEEfwISSqDSk64s5YzWCZi6j6jrjoJpDldLgc/Q0zLtofg82CP+0l446QlRlQuHzDgTPlG058w5Gpbd+MUj8cOz2lcj1Td8AbvGy1meZjASkzxb0f2IVH8ZTm87E6AaiJ9gD+n5jL0zTpF+OSzq/IZmkvl2EE/gEh2bRU/YCSf8TNCMVZgvxuFzwZhdJSmVXV26TV4Gar/5oNNwq/59Nz9CTnGzayp31ILn6UhZVkODv64+ziyEgAwEUHAJ6HaH3kbOZQDlOxjdCQUfN/oMlSrNneMSZaTyK9jqhpetAKjbH5oMVojH01WYSNzrXP/937QzS5MASDYZ+8BxgP5GW7NS3j2Kh0Dxyf8HPwKRKFWfUbMonDmR1lFtAEglrbNVSFmf2QjAWfNXdpnwwxypyYzk9k9+f1t8oy8b0XujktRuR2QP+KQtboQYWh4Y/gNMqC+KQSxf0sBqrMNegydGh2MnjIoGiecsiV+soWZOrqm8WfWiFxa4MNfjtFdGpLkcmlsri2C9O08iajddSOt3BwcjPPpJjZagdBiOdaPGgfajluX7mjsgUO6S/Hx7Q2O3Wf3nCWWs8LKJg8RCEYlw34CARhkbhJ6VoTSeAE/ZO+pV0yGivhv9TBKcI0EhTgkRI9dryK+34cLEmfnLVeAHPzes/+Ucx+AIVR4pTTF6nj6uihPVqA+C0PoPmQTa3nc+IGdzB7T59BRgSiwSGvvzHX5qRkxvoIW/2l6dfRL1gTqB3ipgeyCQ07UNCAw38S1si8vEw"
-      }
+      },
+      "matchHost": "https://api.github.com"
     },
     {
-      "matchHost": "https://api.github.com",
       "encrypted": {
         "token": "wcFMA/xDdHCJBTolARAAiUz7+oFTBykDtbzPv9Y8REDLBUVpXXi8S32j/HTp79RCEA86ol6YwzX4sLjGr/3oa/nUSdSj3ClEEfwISSqDSk64s5YzWCZi6j6jrjoJpDldLgc/Q0zLtofg82CP+0l446QlRlQuHzDgTPlG058w5Gpbd+MUj8cOz2lcj1Td8AbvGy1meZjASkzxb0f2IVH8ZTm87E6AaiJ9gD+n5jL0zTpF+OSzq/IZmkvl2EE/gEh2bRU/YCSf8TNCMVZgvxuFzwZhdJSmVXV26TV4Gar/5oNNwq/59Nz9CTnGzayp31ILn6UhZVkODv64+ziyEgAwEUHAJ6HaH3kbOZQDlOxjdCQUfN/oMlSrNneMSZaTyK9jqhpetAKjbH5oMVojH01WYSNzrXP/937QzS5MASDYZ+8BxgP5GW7NS3j2Kh0Dxyf8HPwKRKFWfUbMonDmR1lFtAEglrbNVSFmf2QjAWfNXdpnwwxypyYzk9k9+f1t8oy8b0XujktRuR2QP+KQtboQYWh4Y/gNMqC+KQSxf0sBqrMNegydGh2MnjIoGiecsiV+soWZOrqm8WfWiFxa4MNfjtFdGpLkcmlsri2C9O08iajddSOt3BwcjPPpJjZagdBiOdaPGgfajluX7mjsgUO6S/Hx7Q2O3Wf3nCWWs8LKJg8RCEYlw34CARhkbhJ6VoTSeAE/ZO+pV0yGivhv9TBKcI0EhTgkRI9dryK+34cLEmfnLVeAHPzes/+Ucx+AIVR4pTTF6nj6uihPVqA+C0PoPmQTa3nc+IGdzB7T59BRgSiwSGvvzHX5qRkxvoIW/2l6dfRL1gTqB3ipgeyCQ07UNCAw38S1si8vEw"
-      }
+      },
+      "matchHost": "https://github.com/PJ-Schulz"
     }
   ],
-  "rebaseWhen": "behind-base-branch",
   "ignoreTests": false,
-  "timezone": "Europe/Berlin",
-  "labels": ["renovate"],
-  "platformAutomerge": true,
-  "schedule": [
-    "before 5am every weekday"
+  "includePaths": [
+    "pyproject.toml"
+  ],
+  "kubernetes": {
+    "fileMatch": [
+      "\\.yaml$"
+    ]
+  },
+  "labels": [
+    "renovate"
   ],
   "packageRules": [
     {
-      "matchDepTypes": ["dev"],
-      "matchFileNames": ["pyproject.toml"],
-      "matchUpdateTypes": ["major"],
-      "addLabels": ["major"],
-      "automerge": false
+      "addLabels": [
+        "major"
+      ],
+      "automerge": false,
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "prBodyNotes": [
+        ":warning: Major update, check for compatibility and merge manually"
+      ]
     },
     {
-      "matchDepTypes": ["dependencies"],
-      "matchFileNames": ["pyproject.toml"],
-      "matchUpdateTypes": ["major"],
-      "addLabels": ["major"],
-      "automerge": false
+      "addLabels": [
+        "major"
+      ],
+      "automerge": false,
+      "matchCurrentVersion": "/^v?0\\./",
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "prBodyNotes": [
+        ":warning: Version 0.x.x, check for compatibility and merge manually"
+      ]
     },
     {
-      "matchDepTypes": ["dev"],
-      "matchFileNames": ["pyproject.toml"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "addLabels": ["dev", "pepperize"],
-      "matchPackagePatterns": ["^pepperize"],
-      "groupName": "pepperize-dependencies",
-      "automerge": true
+      "automerge": true,
+      "groupName": "dependencies",
+      "matchCurrentVersion": "!/^v?0\\./",
+      "matchUpdateTypes": [
+        "minor"
+      ]
     },
     {
-      "matchDepTypes": ["dev"],
-      "matchFileNames": ["pyproject.toml"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "addLabels": ["dev"],
-      "automerge": true
+      "automerge": true,
+      "groupName": "dependencies",
+      "matchUpdateTypes": [
+        "patch"
+      ]
     },
     {
-      "matchDepTypes": ["dependencies"],
-      "matchFileNames": ["pyproject.toml"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "addLabels": [
+        "dev"
+      ],
+      "groupName": "dev-dependencies",
+      "matchCurrentVersion": "!/^v?0\\./",
+      "matchDepTypes": [
+        "dev",
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ]
+    },
+    {
+      "addLabels": [
+        "dev"
+      ],
+      "groupName": "dev-dependencies",
+      "matchDepTypes": [
+        "dev",
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ]
+    },
+    {
+      "addLabels": [
+        "dev"
+      ],
+      "commitMessageTopic": "dev-dependency {{depName}}",
+      "matchDepTypes": [
+        "dev",
+        "devDependencies"
+      ]
     }
-  ]
+  ],
+  "platformAutomerge": true,
+  "prHourlyLimit": 10,
+  "rebaseWhen": "behind-base-branch",
+  "schedule": [
+    "every thursday between 12:00 am and 5:00 am"
+  ],
+  "timezone": "Europe/Berlin"
 }
