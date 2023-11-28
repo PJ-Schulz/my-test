@@ -13,5 +13,6 @@ custom_pre_package_rules: []
 include_paths:
 - pyproject.toml
 schedule:
-- every monday between 12:00 am and 5:00 am
+- after 12am every thursday
+- before 5am every thursday
 tests: true
