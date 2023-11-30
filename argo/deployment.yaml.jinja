@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ resources_name }}
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: {{ resources_name }}
+  template:
+    metadata:
+      labels:
+        app: {{ resources_name }}
+    spec:
+      containers:
+      - name: {{ resources_name }}
+        image: {% if deployment_type == 'Offline' %}local.docker/redis{% else %}redis{% endif %}:6.2.13
