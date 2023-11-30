@@ -112,8 +112,8 @@
   "prHourlyLimit": 10,
   "rebaseWhen": "behind-base-branch",
   "schedule": [
-    "after 12am every thursday",
-    "before 5am every thursday"
+    "after 12am every monday",
+    "before 5am every monday"
   ],
   "timezone": "Europe/Berlin"
 }
