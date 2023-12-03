@@ -522,7 +522,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pepperize-cdk-organizations"
-version = "0.7.742"
+version = "0.7.743"
 description = "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP)."
 category = "dev"
 optional = false
@@ -537,7 +537,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "pepperize-cdk-ses-smtp-credentials"
-version = "0.3.584"
+version = "0.3.588"
 description = "Generate SES smtp credentials for a given user and store the credentials in a SecretsManager Secret."
 category = "dev"
 optional = false
@@ -995,7 +995,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "6b435d90959866917b750ab2f5f8eeed9ed848b3ebd36946a4df52fc3b5b5c5d"
+content-hash = "11b864e05523a428414aaccf172a5e56788978171ebd504b01d47f8a5e847227"
 
 [metadata.files]
 annotated-types = [
@@ -1293,12 +1293,12 @@ packaging = [
     {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
 ]
 pepperize-cdk-organizations = [
-    {file = "pepperize.cdk-organizations-0.7.742.tar.gz", hash = "sha256:1e954231ee7f5a7d78d8c62a7a93085e94141f2efde987f7c0ab3319461ae198"},
-    {file = "pepperize.cdk_organizations-0.7.742-py3-none-any.whl", hash = "sha256:fa0376de99587640d2f16405f8c9d2066dfad0fd103f59d435a1371aa2d6777d"},
+    {file = "pepperize.cdk-organizations-0.7.743.tar.gz", hash = "sha256:43b92fb4907daa997c3d6a804e55dcc7a1ffac00836d30d038be70d250a480ca"},
+    {file = "pepperize.cdk_organizations-0.7.743-py3-none-any.whl", hash = "sha256:d8f9b84e4ead39f95ae252ae4e3ecd8f7285f7e3dd635c70956cad1eb9aa6a11"},
 ]
 pepperize-cdk-ses-smtp-credentials = [
-    {file = "pepperize.cdk-ses-smtp-credentials-0.3.584.tar.gz", hash = "sha256:e2119a3653f8f26b7dbaa4182f93eb1ad9969a6e0f8e12598779954081f2ebed"},
-    {file = "pepperize.cdk_ses_smtp_credentials-0.3.584-py3-none-any.whl", hash = "sha256:18dfa39e0d4c58f63bc92d7ef69aae5d4b594f46382b7d81754d292436485d2a"},
+    {file = "pepperize.cdk-ses-smtp-credentials-0.3.588.tar.gz", hash = "sha256:fcfa127941ae5d138570e3aafd965f37aaded16867cdd871f0d8aa7bec7fe977"},
+    {file = "pepperize.cdk_ses_smtp_credentials-0.3.588-py3-none-any.whl", hash = "sha256:f843adb77b07f769941c59decea1b571a3bb272b2a2feeb7db021bac6c64e91a"},
 ]
 pluggy = [
     {file = "pluggy-1.3.0-py3-none-any.whl", hash = "sha256:d89c696a773f8bd377d18e5ecda92b7a3793cbe66c87060a6fb58c7b6e1061f7"},
