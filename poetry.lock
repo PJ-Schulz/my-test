@@ -830,7 +830,7 @@ widechars = ["wcwidth"]
 
 [[package]]
 name = "test234"
-version = "3.1.1"
+version = "3.1.2"
 description = ""
 category = "main"
 optional = false
@@ -851,8 +851,8 @@ uvicorn = "^0.24.0-post.0"
 [package.source]
 type = "git"
 url = "https://github.com/PJ-Schulz/test234.git"
-reference = "3.1.1"
-resolved_reference = "56473bed8c799256f129e6eee95dbf92a425b880"
+reference = "3.1.2"
+resolved_reference = "ec797110379620a2142b3ec478b7c87218b8202f"
 
 [[package]]
 name = "tomli"
@@ -995,7 +995,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "7ad925a267f7c4c8d3decb5a702444d734f41e85ae5a0d73ca318c803f4c31b1"
+content-hash = "9db64aca51d6c7be33b7144db91cd5d5d4915710d6ab079eb3c7f8004f7710f8"
 
 [metadata.files]
 annotated-types = [
