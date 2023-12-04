@@ -10,8 +10,8 @@ python = "^3.10"
 fastapi = "0.104.1"
 pydantic = "2.5.2"
 trio = "0.23.1"
-cdk-lambda-subminute = "2.0.314"
-cdk-aurora-globaldatabase = "2.3.345"
+cdk-lambda-subminute = "2.0.315"
+cdk-aurora-globaldatabase = "2.3.347"
 test234 = {git = "https://github.com/PJ-Schulz/test234.git", tag = "3.1.1"}
 redis = {git = "https://github.com/redis/redis-py.git", tag = "v5.0.1"}
 
