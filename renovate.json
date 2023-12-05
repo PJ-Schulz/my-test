@@ -113,7 +113,8 @@
   "rebaseWhen": "behind-base-branch",
   "schedule": [
     "after 12am and before 5am every monday",
-    "after 8pm every tuesday and before 5am every wednesday"
+    "after 8pm every tuesday",
+    "before 5am every wednesday"
   ],
   "timezone": "Europe/Berlin"
 }
