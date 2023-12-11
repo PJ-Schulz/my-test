@@ -127,7 +127,7 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.349"
+version = "2.3.352"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 category = "main"
 optional = false
@@ -136,13 +136,13 @@ python-versions = "~=3.8"
 [package.dependencies]
 aws-cdk-lib = ">=2.45.0,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.92.0,<2.0.0"
+jsii = ">=1.93.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk-lambda-subminute"
-version = "2.0.318"
+version = "2.0.321"
 description = "A construct for deploying a Lambda function that can be invoked every time unit less than one minute."
 category = "main"
 optional = false
@@ -151,7 +151,7 @@ python-versions = "~=3.8"
 [package.dependencies]
 aws-cdk-lib = ">=2.94.0,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.92.0,<2.0.0"
+jsii = ">=1.93.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
@@ -470,7 +470,7 @@ requirements-deprecated-finder = ["pip-api", "pipreqs"]
 
 [[package]]
 name = "jsii"
-version = "1.92.0"
+version = "1.93.0"
 description = "Python client for jsii runtime"
 category = "main"
 optional = false
@@ -478,7 +478,7 @@ python-versions = "~=3.8"
 
 [package.dependencies]
 attrs = ">=21.2,<24.0"
-cattrs = ">=1.8,<23.2"
+cattrs = ">=1.8,<23.3"
 importlib-resources = ">=5.2.0"
 publication = ">=0.0.3"
 python-dateutil = "*"
@@ -995,7 +995,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "5a1d61a1e2402bad2fb19777105797dc6acc256629b644b50f28fe553086aa15"
+content-hash = "cb1044f64a734c01ba5c9097cd9970858d922f5e5bef1345137b2ef89b09ec95"
 
 [metadata.files]
 annotated-types = [
@@ -1035,12 +1035,12 @@ cattrs = [
     {file = "cattrs-23.1.2.tar.gz", hash = "sha256:db1c821b8c537382b2c7c66678c3790091ca0275ac486c76f3c8f3920e83c657"},
 ]
 cdk-aurora-globaldatabase = [
-    {file = "cdk-aurora-globaldatabase-2.3.349.tar.gz", hash = "sha256:722f196bf3339e4d8bbd95f1c3645215dce10ebd75350124a8c28402982b03f3"},
-    {file = "cdk_aurora_globaldatabase-2.3.349-py3-none-any.whl", hash = "sha256:6d7783d989a84bc4cbf10539bc92aa20749bfa55bbbec47f12d18d17263e0472"},
+    {file = "cdk-aurora-globaldatabase-2.3.352.tar.gz", hash = "sha256:7738a2bee10ea6716f9ce6ae7950cd39628030d14fdf6cf549cd00f82254cbd1"},
+    {file = "cdk_aurora_globaldatabase-2.3.352-py3-none-any.whl", hash = "sha256:95ec22e348b99a6bd9b58ab1e8c1ce604854b37aa0ff61f50e26af61715a9ce6"},
 ]
 cdk-lambda-subminute = [
-    {file = "cdk_lambda_subminute-2.0.318-py3-none-any.whl", hash = "sha256:94304c873b4a625ee3998fbc2aa8fd338e9dfe9e235d791bf9036fa9aefb03f1"},
-    {file = "cdk_lambda_subminute-2.0.318.tar.gz", hash = "sha256:791277c8159487d9ec7ffadeaa036d4ba34aa08c8bf2c90424f4e399ca645d5f"},
+    {file = "cdk_lambda_subminute-2.0.321-py3-none-any.whl", hash = "sha256:186fc38399dc1faa84f5fd462cc4990a2c90986783fa6020add100f2291106b4"},
+    {file = "cdk_lambda_subminute-2.0.321.tar.gz", hash = "sha256:64da71bf0af37d377d18f733abf2310125c11de5bf5b20286fc3dd761c376622"},
 ]
 certifi = [
     {file = "certifi-2023.11.17-py3-none-any.whl", hash = "sha256:e036ab49d5b79556f99cfc2d9320b34cfbe5be05c5871b51de9329f0603b0474"},
@@ -1273,8 +1273,8 @@ isort = [
     {file = "isort-5.12.0.tar.gz", hash = "sha256:8bef7dde241278824a6d83f44a544709b065191b95b6e50894bdc722fcba0504"},
 ]
 jsii = [
-    {file = "jsii-1.92.0-py3-none-any.whl", hash = "sha256:30deaea011e146e1d4c0dbb35bd7effd4d292cef676052e5672a825fc1aaaebf"},
-    {file = "jsii-1.92.0.tar.gz", hash = "sha256:2b5205c0fec87e1a9a9f283f60577ad172d7124bb614b8cdadc963306e1ac75f"},
+    {file = "jsii-1.93.0-py3-none-any.whl", hash = "sha256:d3cba8c18f2bb4eb94aa41a202b4eb14a561a3a347ed086294a6c9d5d17c90d6"},
+    {file = "jsii-1.93.0.tar.gz", hash = "sha256:15349b329b79699c88a6041c8987a4470e6cfa544e5c1e4a126bc5be9f48a623"},
 ]
 mccabe = [
     {file = "mccabe-0.7.0-py2.py3-none-any.whl", hash = "sha256:6c2d30ab6be0e4a46919781807b4f0d834ebdd6c6e3dca0bda5a15f863427b6e"},
