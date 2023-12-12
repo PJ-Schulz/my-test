@@ -19,9 +19,9 @@ redis = {git = "https://github.com/redis/redis-py.git", tag = "v5.0.1"}
 pytest = "7.4.3"
 hypothesis = "6.92.0"
 flake8 = "6.1.0"
-isort = "5.13.0"
-pepperize-cdk-ses-smtp-credentials = "0.3.602"
-pepperize-cdk-organizations = "0.7.744"
+isort = "5.13.1"
+pepperize-cdk-ses-smtp-credentials = "0.3.607"
+pepperize-cdk-organizations = "0.7.748"
 
 [build-system]
 requires = ["poetry-core"]
