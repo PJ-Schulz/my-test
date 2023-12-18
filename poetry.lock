@@ -127,7 +127,7 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.355"
+version = "2.3.360"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 category = "main"
 optional = false
@@ -142,7 +142,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk-lambda-subminute"
-version = "2.0.324"
+version = "2.0.329"
 description = "A construct for deploying a Lambda function that can be invoked every time unit less than one minute."
 category = "main"
 optional = false
@@ -888,7 +888,7 @@ ray = ["ray (>=1.12.1)"]
 
 [[package]]
 name = "trio"
-version = "0.23.1"
+version = "0.23.2"
 description = "A friendly Python library for async concurrency and I/O"
 category = "main"
 optional = false
@@ -897,7 +897,7 @@ python-versions = ">=3.8"
 [package.dependencies]
 attrs = ">=20.1.0"
 cffi = {version = ">=1.14", markers = "os_name == \"nt\" and implementation_name != \"pypy\""}
-exceptiongroup = {version = ">=1.0.0rc9", markers = "python_version < \"3.11\""}
+exceptiongroup = {version = "*", markers = "python_version < \"3.11\""}
 idna = "*"
 outcome = "*"
 sniffio = ">=1.3.0"
@@ -992,7 +992,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "72a435e8ca4f81f8c2046e6169fc87db05382e10d73e44d993a73a911539dee4"
+content-hash = "2ff162565f0a3b373a0da00f42f58ab803408b7d81ceb7a2f22584f2f9c6628d"
 
 [metadata.files]
 annotated-types = [
@@ -1032,12 +1032,12 @@ cattrs = [
     {file = "cattrs-23.1.2.tar.gz", hash = "sha256:db1c821b8c537382b2c7c66678c3790091ca0275ac486c76f3c8f3920e83c657"},
 ]
 cdk-aurora-globaldatabase = [
-    {file = "cdk-aurora-globaldatabase-2.3.355.tar.gz", hash = "sha256:29caa8adc1261ffcbae96324e5d54d552f64fbdca2d57064e0aaf931895d2f28"},
-    {file = "cdk_aurora_globaldatabase-2.3.355-py3-none-any.whl", hash = "sha256:c856fcf66510e519c41eabe73954a717be8c05a57dbfce4c8582d31a18b6b4c1"},
+    {file = "cdk-aurora-globaldatabase-2.3.360.tar.gz", hash = "sha256:61a134d01f47eb5c88e1e0e0a59badd94349c3c90ce5aebd7ece5d05ad753a7b"},
+    {file = "cdk_aurora_globaldatabase-2.3.360-py3-none-any.whl", hash = "sha256:6cb6925168acb2ebf958d00badaa9a84526e4b1e0724a8add7a5426ab27c33fc"},
 ]
 cdk-lambda-subminute = [
-    {file = "cdk_lambda_subminute-2.0.324-py3-none-any.whl", hash = "sha256:806d685b71f60392676ee6f90aa9aaaaf4275bf4153b0cd9c83940b15c380331"},
-    {file = "cdk_lambda_subminute-2.0.324.tar.gz", hash = "sha256:cadae51c0fb6ba3d126021fc807932ca26fbfcc641e21e2c23b834c98361aa38"},
+    {file = "cdk_lambda_subminute-2.0.329-py3-none-any.whl", hash = "sha256:9acd68adf5687c271aa7ac39359f233084d9f6825bebb246671bbc203109c1ba"},
+    {file = "cdk_lambda_subminute-2.0.329.tar.gz", hash = "sha256:f588d29667d8a7f1d7bf7dc8195dd66512c486355b810e8cf1f1edbf85f9281c"},
 ]
 certifi = [
     {file = "certifi-2023.11.17-py3-none-any.whl", hash = "sha256:e036ab49d5b79556f99cfc2d9320b34cfbe5be05c5871b51de9329f0603b0474"},
@@ -1558,8 +1558,8 @@ torchx-nightly = [
     {file = "torchx_nightly-2023.12.1-py3-none-any.whl", hash = "sha256:ffec8f3e028bbbcc0138141a91fa28b93134d9692b0af9ea77ccdecef9784a9a"},
 ]
 trio = [
-    {file = "trio-0.23.1-py3-none-any.whl", hash = "sha256:bb4abb3f4af23f96679e7c8cdabb8b234520f2498550d2cf63ebfd95f2ce27fe"},
-    {file = "trio-0.23.1.tar.gz", hash = "sha256:16f89f7dcc8f7b9dcdec1fcd863e0c039af6d0f9a22f8dfd56f75d75ec73fd48"},
+    {file = "trio-0.23.2-py3-none-any.whl", hash = "sha256:5a0b566fa5d50cf231cfd6b08f3b03aa4179ff004b8f3144059587039e2b26d3"},
+    {file = "trio-0.23.2.tar.gz", hash = "sha256:da1d35b9a2b17eb32cae2e763b16551f9aa6703634735024e32f325c9285069e"},
 ]
 typeguard = [
     {file = "typeguard-2.13.3-py3-none-any.whl", hash = "sha256:5e3e3be01e887e7eafae5af63d1f36c849aaa94e3a0112097312aabfa16284f1"},
