@@ -519,7 +519,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pepperize-cdk-organizations"
-version = "0.7.755"
+version = "0.7.757"
 description = "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP)."
 category = "dev"
 optional = false
@@ -992,7 +992,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "36d886a1c2516aeeb030b2b851f5e3d7b3799151727c89203ebebee95f72c24c"
+content-hash = "bfdb9eee8a1c1c6885402702b5237421f995f2fefb1b6cb4a20f0551928a04a9"
 
 [metadata.files]
 annotated-types = [
@@ -1290,8 +1290,8 @@ packaging = [
     {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
 ]
 pepperize-cdk-organizations = [
-    {file = "pepperize.cdk-organizations-0.7.755.tar.gz", hash = "sha256:0b6a550581890fcf9d1c9bb7472bffab6f7a286e82dc03829ddde5501a3e9c36"},
-    {file = "pepperize.cdk_organizations-0.7.755-py3-none-any.whl", hash = "sha256:e717da5db8458039e8313275c4d4d9bea66db174011ffe5e98919e0df8411302"},
+    {file = "pepperize.cdk-organizations-0.7.757.tar.gz", hash = "sha256:8b8f443a2a81d8abc1a90da68895afa84a1ef1322dc5392174350ec3dba77b76"},
+    {file = "pepperize.cdk_organizations-0.7.757-py3-none-any.whl", hash = "sha256:7c0b3694f4dad476e00ed97e45d49241816a50f3a7a5f038433918eede47e692"},
 ]
 pepperize-cdk-ses-smtp-credentials = [
     {file = "pepperize.cdk-ses-smtp-credentials-0.3.618.tar.gz", hash = "sha256:590a477b0fbf93a53533e62819fe2d8cd2ba578cf54a1b3235a990f8dc6811ac"},
