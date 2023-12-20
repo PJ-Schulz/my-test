@@ -127,7 +127,7 @@ ujson = ["ujson (>=5.4.0,<6.0.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.360"
+version = "2.3.361"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 category = "main"
 optional = false
@@ -142,7 +142,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk-lambda-subminute"
-version = "2.0.329"
+version = "2.0.331"
 description = "A construct for deploying a Lambda function that can be invoked every time unit less than one minute."
 category = "main"
 optional = false
@@ -992,7 +992,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "bfdb9eee8a1c1c6885402702b5237421f995f2fefb1b6cb4a20f0551928a04a9"
+content-hash = "696e7f7e8a016de7e8e839f652f7ae89a01f3ce1aae4335947a5aca9267d3769"
 
 [metadata.files]
 annotated-types = [
@@ -1032,12 +1032,12 @@ cattrs = [
     {file = "cattrs-23.1.2.tar.gz", hash = "sha256:db1c821b8c537382b2c7c66678c3790091ca0275ac486c76f3c8f3920e83c657"},
 ]
 cdk-aurora-globaldatabase = [
-    {file = "cdk-aurora-globaldatabase-2.3.360.tar.gz", hash = "sha256:61a134d01f47eb5c88e1e0e0a59badd94349c3c90ce5aebd7ece5d05ad753a7b"},
-    {file = "cdk_aurora_globaldatabase-2.3.360-py3-none-any.whl", hash = "sha256:6cb6925168acb2ebf958d00badaa9a84526e4b1e0724a8add7a5426ab27c33fc"},
+    {file = "cdk-aurora-globaldatabase-2.3.361.tar.gz", hash = "sha256:72d9c4bc87392cc712020326660979a56503eda3b3e3effae6632b59cb0fd400"},
+    {file = "cdk_aurora_globaldatabase-2.3.361-py3-none-any.whl", hash = "sha256:85d2e67d0b49912b98fad2e99161175184c8192c8966bfc2417aad325c11ec8b"},
 ]
 cdk-lambda-subminute = [
-    {file = "cdk_lambda_subminute-2.0.329-py3-none-any.whl", hash = "sha256:9acd68adf5687c271aa7ac39359f233084d9f6825bebb246671bbc203109c1ba"},
-    {file = "cdk_lambda_subminute-2.0.329.tar.gz", hash = "sha256:f588d29667d8a7f1d7bf7dc8195dd66512c486355b810e8cf1f1edbf85f9281c"},
+    {file = "cdk_lambda_subminute-2.0.331-py3-none-any.whl", hash = "sha256:a81edebd6aa9cf47ae2424310c1e3524a13889f1b1acfffdde3cd9f2bbb7705d"},
+    {file = "cdk_lambda_subminute-2.0.331.tar.gz", hash = "sha256:832710b982b1bc5245f7791ef606a60cc890012844d740e55cd1e13c42943c48"},
 ]
 certifi = [
     {file = "certifi-2023.11.17-py3-none-any.whl", hash = "sha256:e036ab49d5b79556f99cfc2d9320b34cfbe5be05c5871b51de9329f0603b0474"},
