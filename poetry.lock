@@ -375,7 +375,7 @@ socks = ["socksio (>=1.0.0,<2.0.0)"]
 
 [[package]]
 name = "hypothesis"
-version = "6.92.1"
+version = "6.92.2"
 description = "A library for property-based testing"
 category = "dev"
 optional = false
@@ -519,7 +519,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pepperize-cdk-organizations"
-version = "0.7.761"
+version = "0.7.762"
 description = "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP)."
 category = "dev"
 optional = false
@@ -992,7 +992,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "c8e55cdfce0cc64590da7b2590bb12e27abd2cb3d48946e5f208d63ee8a441de"
+content-hash = "f42fca73f6a302a3f7c90a32244e989f82d0a0b0eea58d0784e8dcbc934df61c"
 
 [metadata.files]
 annotated-types = [
@@ -1242,8 +1242,8 @@ httpx = [
     {file = "httpx-0.25.2.tar.gz", hash = "sha256:8b8fcaa0c8ea7b05edd69a094e63a2094c4efcb48129fb757361bc423c0ad9e8"},
 ]
 hypothesis = [
-    {file = "hypothesis-6.92.1-py3-none-any.whl", hash = "sha256:3cba76a7389bd7245c350fcf7234663314dc81a5be0bbef72a07d8c249bfc210"},
-    {file = "hypothesis-6.92.1.tar.gz", hash = "sha256:fa755ded526e50b7e2f642cdc5d64519f88d4e4ee71d9d29ec3eb2f2fddf1274"},
+    {file = "hypothesis-6.92.2-py3-none-any.whl", hash = "sha256:d335044492acb03fa1fdb4edacb81cca2e578049fc7306345bc0e8947fef15a9"},
+    {file = "hypothesis-6.92.2.tar.gz", hash = "sha256:841f89a486c43bdab55698de8929bd2635639ec20bf6ce98ccd75622d7ee6d41"},
 ]
 iam-actions = [
     {file = "iam_actions-1.2.20231201-py3-none-any.whl", hash = "sha256:e3cda7794dd0472cff6efa3d6684b85363b34509eb6bde7f3515586e8c10d4eb"},
@@ -1290,8 +1290,8 @@ packaging = [
     {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
 ]
 pepperize-cdk-organizations = [
-    {file = "pepperize.cdk-organizations-0.7.761.tar.gz", hash = "sha256:819186c0fb3dccfe6e2a3f5999603c4309f029d321597fc7899aee4669af7925"},
-    {file = "pepperize.cdk_organizations-0.7.761-py3-none-any.whl", hash = "sha256:ce22d657c76ad954021112698d3848a0e33e3d437d318b03928b23b21b673aad"},
+    {file = "pepperize.cdk-organizations-0.7.762.tar.gz", hash = "sha256:dcc69e8ec8d0a5ef9232a53c74635a7a17d2265c9cdb9f97e085f1964b89075f"},
+    {file = "pepperize.cdk_organizations-0.7.762-py3-none-any.whl", hash = "sha256:7832ead957be17deab5a5b66d2f95245497bece65c2044c4be513d746ce256ba"},
 ]
 pepperize-cdk-ses-smtp-credentials = [
     {file = "pepperize.cdk-ses-smtp-credentials-0.3.625.tar.gz", hash = "sha256:672396bbaa5350ed96efc6d609ffd76d3bc6f1a7e91e8aebff280cf32fc656e4"},
