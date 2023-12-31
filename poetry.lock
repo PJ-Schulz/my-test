@@ -519,7 +519,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pepperize-cdk-organizations"
-version = "0.7.762"
+version = "0.7.766"
 description = "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP)."
 category = "dev"
 optional = false
@@ -534,7 +534,7 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "pepperize-cdk-ses-smtp-credentials"
-version = "0.3.625"
+version = "0.3.628"
 description = "Generate SES smtp credentials for a given user and store the credentials in a SecretsManager Secret."
 category = "dev"
 optional = false
@@ -662,7 +662,7 @@ cp2110 = ["hidapi"]
 
 [[package]]
 name = "pytest"
-version = "7.4.3"
+version = "7.4.4"
 description = "pytest: simple powerful testing with Python"
 category = "dev"
 optional = false
@@ -992,7 +992,7 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "f42fca73f6a302a3f7c90a32244e989f82d0a0b0eea58d0784e8dcbc934df61c"
+content-hash = "4692eb4930b564c38504f2793fc0246672a24f78f0233c07ea33ed3288f01734"
 
 [metadata.files]
 annotated-types = [
@@ -1290,12 +1290,12 @@ packaging = [
     {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
 ]
 pepperize-cdk-organizations = [
-    {file = "pepperize.cdk-organizations-0.7.762.tar.gz", hash = "sha256:dcc69e8ec8d0a5ef9232a53c74635a7a17d2265c9cdb9f97e085f1964b89075f"},
-    {file = "pepperize.cdk_organizations-0.7.762-py3-none-any.whl", hash = "sha256:7832ead957be17deab5a5b66d2f95245497bece65c2044c4be513d746ce256ba"},
+    {file = "pepperize.cdk-organizations-0.7.766.tar.gz", hash = "sha256:56ef50cc7d9e7ae2046a25e60a713822c4a9fd047cdb8fbb44d28aab83823119"},
+    {file = "pepperize.cdk_organizations-0.7.766-py3-none-any.whl", hash = "sha256:26e2637f837fbb96af9f5b131c98e703abc36dcd6ff2780e4f565fe745f32dad"},
 ]
 pepperize-cdk-ses-smtp-credentials = [
-    {file = "pepperize.cdk-ses-smtp-credentials-0.3.625.tar.gz", hash = "sha256:672396bbaa5350ed96efc6d609ffd76d3bc6f1a7e91e8aebff280cf32fc656e4"},
-    {file = "pepperize.cdk_ses_smtp_credentials-0.3.625-py3-none-any.whl", hash = "sha256:fce761db4dc992ce392d5a163343f2c85a790dbd0c3c121cda2a9040810c09cc"},
+    {file = "pepperize.cdk-ses-smtp-credentials-0.3.628.tar.gz", hash = "sha256:e50129e0345e0031c7f4882ad59bbcc67cfdfaaef219b69246a31932f77b0ae4"},
+    {file = "pepperize.cdk_ses_smtp_credentials-0.3.628-py3-none-any.whl", hash = "sha256:6916c547597f426e20d16171e32fa2670ef8368721c1361c6e29f366051dcfba"},
 ]
 pluggy = [
     {file = "pluggy-1.3.0-py3-none-any.whl", hash = "sha256:d89c696a773f8bd377d18e5ecda92b7a3793cbe66c87060a6fb58c7b6e1061f7"},
@@ -1441,8 +1441,8 @@ pyserial = [
     {file = "pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb"},
 ]
 pytest = [
-    {file = "pytest-7.4.3-py3-none-any.whl", hash = "sha256:0d009c083ea859a71b76adf7c1d502e4bc170b80a8ef002da5806527b9591fac"},
-    {file = "pytest-7.4.3.tar.gz", hash = "sha256:d989d136982de4e3b29dabcc838ad581c64e8ed52c11fbe86ddebd9da0818cd5"},
+    {file = "pytest-7.4.4-py3-none-any.whl", hash = "sha256:b090cdf5ed60bf4c45261be03239c2c1c22df034fbffe691abe93cd80cea01d8"},
+    {file = "pytest-7.4.4.tar.gz", hash = "sha256:2cf0005922c6ace4a3e2ec8b4080eb0d9753fdc93107415332f50ce9e7994280"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
