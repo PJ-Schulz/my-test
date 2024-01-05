@@ -31,81 +31,49 @@
   ],
   "packageRules": [
     {
-      "addLabels": [
-        "major"
-      ],
+      "addLabels": ["major"],
       "automerge": false,
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "prBodyNotes": [
-        ":warning: Major update, check for compatibility and merge manually"
-      ]
+      "matchUpdateTypes": ["major"],
+      "prBodyNotes": [":warning: Major update, check for compatibility and merge manually"]
     },
     {
-      "addLabels": [
-        "major"
-      ],
+      "addLabels": ["major"],
       "automerge": false,
       "matchCurrentVersion": "/^v?0\\./",
-      "matchUpdateTypes": [
-        "minor"
-      ],
-      "prBodyNotes": [
-        ":warning: Version 0.x.x, check for compatibility and merge manually"
-      ]
+      "matchUpdateTypes": ["minor"],
+      "bumpVersion": "patch",
+      "prBodyNotes": [":warning: Version 0.x.x, check for compatibility and merge manually"]
     },
     {
       "automerge": true,
       "groupName": "dependencies",
+      "bumpVersion": "patch",
       "matchCurrentVersion": "!/^v?0\\./",
-      "matchUpdateTypes": [
-        "minor"
-      ]
+      "matchUpdateTypes": ["minor"]
     },
     {
       "automerge": true,
       "groupName": "dependencies",
-      "matchUpdateTypes": [
-        "patch"
-      ]
+      "bumpVersion": "patch",
+      "matchUpdateTypes": ["patch"]
     },
     {
-      "addLabels": [
-        "dev"
-      ],
+      "addLabels": ["dev"],
       "groupName": "dev-dependencies",
       "matchCurrentVersion": "!/^v?0\\./",
-      "matchDepTypes": [
-        "dev",
-        "devDependencies"
-      ],
-      "matchUpdateTypes": [
-        "minor"
-      ]
+      "matchDepTypes": ["dev", "devDependencies"],
+      "matchUpdateTypes": ["minor"]
     },
     {
-      "addLabels": [
-        "dev"
-      ],
+      "addLabels": ["dev"],
       "groupName": "dev-dependencies",
-      "matchDepTypes": [
-        "dev",
-        "devDependencies"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ]
+      "matchDepTypes": ["dev", "devDependencies"],
+      "matchUpdateTypes": ["patch"]
     },
     {
-      "addLabels": [
-        "dev"
-      ],
+      "addLabels": ["dev"],
       "commitMessageTopic": "dev-dependency {{depName}}",
-      "matchDepTypes": [
-        "dev",
-        "devDependencies"
-      ]
+      "matchDepTypes": ["dev", "devDependencies"]
     }
   ],
   "platformAutomerge": true,
