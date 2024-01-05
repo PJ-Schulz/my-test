@@ -15,13 +15,13 @@ jobs:
     #   c. if it was NOT a renovate pull request (checking pt title with *chore(deps)*).
     # 2. event_name == 'workflow_run'
     #   a. The workflow was run successfully without error
-    if: >
-      (github.event_name == 'pull_request' && (
-        github.event.pull_request.merged == true &&
-        !contains(github.event.pull_request.labels.*.name, 'renovate') )) ||
-      (github.event_name == 'workflow_run' &&
-        github.event.workflow_run.conclusion == 'success')
-
+    # if: >
+    #   (github.event_name == 'pull_request' && (
+    #     github.event.pull_request.merged == true &&
+    #     !contains(github.event.pull_request.labels.*.name, 'renovate') )) ||
+    #   (github.event_name == 'workflow_run' &&
+    #     github.event.workflow_run.conclusion == 'success')
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: write
