@@ -3,20 +3,6 @@
   "extends": [
     "config:recommended"
   ],
-  "hostRules": [
-    {
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolARAAlHS+xmDlH+AaIZsdQgNmI2sH1TzT84Eu9mz9FgiELHtYxTtTf4YJCQp+lpEI8MQNaXZUk6F/vvEqhr5Za1f6inFesOrBKo5IQuUlqDQGp4cX0yZ/Of7oQucL+N0wn+jRc4D45pNFyf88v0I9gchorPCYQfZzOqrlUlSPBaN1zFy4SyIYCtk9hgsBVLk4jTp648MkyqOEf+58ZR3HqPyFI4tRUXjSPBSqjLlSpkFYuRx+OIqdqEQJITBj7KYRC42MZvuDmqV6MMnOlgRQTYWoqLSWR8uK+pJJyBbO/1/HvDNykM8Q9AKEwvneLWCezBLpOiFT7uhx6XaYt+DKIAB4x5yG4MW9BBAI8UmxtKIbPPFF+XH0OeG7c9Zq6lH4KWb0cANR3pYGVKrZ1BUQXremTJ+KNwnVMog2Do7uyuBB5U2/vFU8jJZRpdXNiSdh2kFczOc0R3ULvipRDyqLjGxP41TtX7Ljm5gB05H3Go47Njq8zXqUBxF1lNDuPojnX45owmVU5+leiYVZIXuyT3kTSO1Wp8fJuHX6p1Ql1Tkzbl8RQDy+IkJolPAOEM+h4X558p0Gd2HrmxOtfr+hEQKnMfUUMRICIFCDmp8lx3vzNIZyhgksBBJk/l7EF1t5hDBj12d5VA9f/5FNTFpn3JuWxrfg3tf54t/pQkFkffg6uBLSeAFQuyeoiYThc/ePposyaKDLO+Ws1UR/5aRB3LUY2PZSJiarfWJ5NTy5qlFPWtuwQ/pwLXv5ePH9k00za0T2dt80zjmv0IcJQEDTPl0UxbntoHu0SVYsQ8mnRYzDfngKqM0bkP+NWo1U2zT6MbrZRXpBAgUnoxJKMQ"
-      },
-      "matchHost": "https://api.github.com"
-    },
-    {
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolARAAlHS+xmDlH+AaIZsdQgNmI2sH1TzT84Eu9mz9FgiELHtYxTtTf4YJCQp+lpEI8MQNaXZUk6F/vvEqhr5Za1f6inFesOrBKo5IQuUlqDQGp4cX0yZ/Of7oQucL+N0wn+jRc4D45pNFyf88v0I9gchorPCYQfZzOqrlUlSPBaN1zFy4SyIYCtk9hgsBVLk4jTp648MkyqOEf+58ZR3HqPyFI4tRUXjSPBSqjLlSpkFYuRx+OIqdqEQJITBj7KYRC42MZvuDmqV6MMnOlgRQTYWoqLSWR8uK+pJJyBbO/1/HvDNykM8Q9AKEwvneLWCezBLpOiFT7uhx6XaYt+DKIAB4x5yG4MW9BBAI8UmxtKIbPPFF+XH0OeG7c9Zq6lH4KWb0cANR3pYGVKrZ1BUQXremTJ+KNwnVMog2Do7uyuBB5U2/vFU8jJZRpdXNiSdh2kFczOc0R3ULvipRDyqLjGxP41TtX7Ljm5gB05H3Go47Njq8zXqUBxF1lNDuPojnX45owmVU5+leiYVZIXuyT3kTSO1Wp8fJuHX6p1Ql1Tkzbl8RQDy+IkJolPAOEM+h4X558p0Gd2HrmxOtfr+hEQKnMfUUMRICIFCDmp8lx3vzNIZyhgksBBJk/l7EF1t5hDBj12d5VA9f/5FNTFpn3JuWxrfg3tf54t/pQkFkffg6uBLSeAFQuyeoiYThc/ePposyaKDLO+Ws1UR/5aRB3LUY2PZSJiarfWJ5NTy5qlFPWtuwQ/pwLXv5ePH9k00za0T2dt80zjmv0IcJQEDTPl0UxbntoHu0SVYsQ8mnRYzDfngKqM0bkP+NWo1U2zT6MbrZRXpBAgUnoxJKMQ"
-      },
-      "matchHost": "https://github.com/PJ-Schulz"
-    }
-  ],
   "ignoreTests": false,
   "includePaths": [
     "pyproject.toml"
