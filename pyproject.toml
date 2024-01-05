@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "my-test"
-version = "0.2.44"
+version = "0.2.45"
 description = ""
 authors = ["Philipp Jaschke <philipp.jaschke@schulz.st>"]
 readme = "README.md"
@@ -9,11 +9,11 @@ readme = "README.md"
 python = "^3.10"
 fastapi = "0.104.1"
 pydantic = "2.5.3"
-trio = "0.23.0"
-cdk-lambda-subminute = "2.0.329"
-cdk-aurora-globaldatabase = "2.3.339"
+trio = "0.23.2"
+cdk-lambda-subminute = "2.0.338"
+cdk-aurora-globaldatabase = "2.3.370"
 test234 = {git = "https://github.com/PJ-Schulz/test234.git", tag = "3.1.4"}
-redis = {git = "https://github.com/redis/redis-py.git", tag = "v5.0.0"}
+redis = {git = "https://github.com/redis/redis-py.git", tag = "v5.0.1"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "7.4.4"
