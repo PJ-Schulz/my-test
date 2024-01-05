@@ -1177,7 +1177,7 @@ files = [
 
 [[package]]
 name = "redis"
-version = "5.0.1"
+version = "5.0.0"
 description = "Python client for Redis database and key-value store"
 optional = false
 python-versions = ">=3.7"
