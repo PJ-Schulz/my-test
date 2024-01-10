@@ -157,19 +157,19 @@ ujson = ["ujson (>=5.7.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.374"
+version = "2.3.375"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "cdk-aurora-globaldatabase-2.3.374.tar.gz", hash = "sha256:8dd8cfcc93ffc58f6bec34a05fce50c6017848d2b75da807b211fb8817276290"},
-    {file = "cdk_aurora_globaldatabase-2.3.374-py3-none-any.whl", hash = "sha256:f1d099c9dd34deba4d0e5e56a18d1bdd446f00ceb012886403250f87d4b8f3d9"},
+    {file = "cdk-aurora-globaldatabase-2.3.375.tar.gz", hash = "sha256:c0375eb7c8ed88729b28c461e36c2fc1cc7e0f49867fbd734a4f395b8cd59b13"},
+    {file = "cdk_aurora_globaldatabase-2.3.375-py3-none-any.whl", hash = "sha256:4f0aedb797d958a92811a7e27b6b5bba98edd98bdd3b34f8e7bb8ecf02bdec92"},
 ]
 
 [package.dependencies]
 aws-cdk-lib = ">=2.45.0,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.93.0,<2.0.0"
+jsii = ">=1.94.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
@@ -710,13 +710,13 @@ colors = ["colorama (>=0.4.6)"]
 
 [[package]]
 name = "jsii"
-version = "1.93.0"
+version = "1.94.0"
 description = "Python client for jsii runtime"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "jsii-1.93.0-py3-none-any.whl", hash = "sha256:d3cba8c18f2bb4eb94aa41a202b4eb14a561a3a347ed086294a6c9d5d17c90d6"},
-    {file = "jsii-1.93.0.tar.gz", hash = "sha256:15349b329b79699c88a6041c8987a4470e6cfa544e5c1e4a126bc5be9f48a623"},
+    {file = "jsii-1.94.0-py3-none-any.whl", hash = "sha256:1105bae271ae47c27cf31c1565c5157306efed5ad9323c9a27336f962f465716"},
+    {file = "jsii-1.94.0.tar.gz", hash = "sha256:175abc356603d98f18ab6f6aa74bfeae253e4e56340aef9dc40bbb1a6a59868b"},
 ]
 
 [package.dependencies]
@@ -1498,4 +1498,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "dafa588c9a8edcc947dee61dbae96803bea7ff0a2e69725976efb4332f9f5131"
+content-hash = "3b9e004be65c045237a33f7f55421fb345e0229632fceb28e7ea8a7e4d01d256"
