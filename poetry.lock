@@ -157,19 +157,19 @@ ujson = ["ujson (>=5.7.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.424"
+version = "2.3.426"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "cdk-aurora-globaldatabase-2.3.424.tar.gz", hash = "sha256:15ce380cd725d5c7fee55e9f429539c156be6f0f3577059541ca01d1b7513e34"},
-    {file = "cdk_aurora_globaldatabase-2.3.424-py3-none-any.whl", hash = "sha256:a8fd00ed0df1e8d2282365e8221fddba7b668598eca122d0b1a332ccb09a9059"},
+    {file = "cdk-aurora-globaldatabase-2.3.426.tar.gz", hash = "sha256:437c5e86227d3dc81304c9a63619ca0cee767dfd9b32f70a75983f1b5c749966"},
+    {file = "cdk_aurora_globaldatabase-2.3.426-py3-none-any.whl", hash = "sha256:a93471e19e31c6450cb5468a88035f364a1c53aabdceff432e9eba64ff5e81f4"},
 ]
 
 [package.dependencies]
 aws-cdk-lib = ">=2.126.0,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.94.0,<2.0.0"
+jsii = ">=1.95.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
@@ -710,13 +710,13 @@ colors = ["colorama (>=0.4.6)"]
 
 [[package]]
 name = "jsii"
-version = "1.94.0"
+version = "1.95.0"
 description = "Python client for jsii runtime"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "jsii-1.94.0-py3-none-any.whl", hash = "sha256:1105bae271ae47c27cf31c1565c5157306efed5ad9323c9a27336f962f465716"},
-    {file = "jsii-1.94.0.tar.gz", hash = "sha256:175abc356603d98f18ab6f6aa74bfeae253e4e56340aef9dc40bbb1a6a59868b"},
+    {file = "jsii-1.95.0-py3-none-any.whl", hash = "sha256:456fe823847e1ebbb49ab4737b181cdb8eeb623058de4669283fba7bb261e8f4"},
+    {file = "jsii-1.95.0.tar.gz", hash = "sha256:f2461a0c1fdd6bb400caac5825596b0068a8c3adb9184549366adcf272815172"},
 ]
 
 [package.dependencies]
@@ -1473,4 +1473,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "64e605674684a66de6b326e2c5e8f2c2b385225ddd925b7875c26d42b54b8757"
+content-hash = "83a5d3df2df79489a911872e1b6831c0fd8970206607b024a927ba1170dacaa6"
