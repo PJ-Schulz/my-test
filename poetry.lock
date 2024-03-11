@@ -157,13 +157,13 @@ ujson = ["ujson (>=5.7.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.426"
+version = "2.3.431"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "cdk-aurora-globaldatabase-2.3.426.tar.gz", hash = "sha256:437c5e86227d3dc81304c9a63619ca0cee767dfd9b32f70a75983f1b5c749966"},
-    {file = "cdk_aurora_globaldatabase-2.3.426-py3-none-any.whl", hash = "sha256:a93471e19e31c6450cb5468a88035f364a1c53aabdceff432e9eba64ff5e81f4"},
+    {file = "cdk-aurora-globaldatabase-2.3.431.tar.gz", hash = "sha256:f8ecbc57e6a6b509fae7566a82aef4007aef67b17db077332740fb4d71c6b4f3"},
+    {file = "cdk_aurora_globaldatabase-2.3.431-py3-none-any.whl", hash = "sha256:61b7f3b36371303d07c435f5082b2a4bd0be6283a89c950bbaee6e158d8aab35"},
 ]
 
 [package.dependencies]
@@ -1152,7 +1152,7 @@ files = [
 
 [[package]]
 name = "redis"
-version = "5.0.2"
+version = "5.0.3"
 description = "Python client for Redis database and key-value store"
 optional = false
 python-versions = ">=3.7"
@@ -1160,7 +1160,7 @@ files = []
 develop = false
 
 [package.dependencies]
-async-timeout = ">=4.0.3"
+async-timeout = {version = ">=4.0.3", markers = "python_full_version < \"3.11.3\""}
 
 [package.extras]
 hiredis = ["hiredis (>=1.0.0)"]
@@ -1169,8 +1169,8 @@ ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"
 [package.source]
 type = "git"
 url = "https://github.com/redis/redis-py.git"
-reference = "v5.0.2"
-resolved_reference = "535f90ed804fb278716f2af46e4d9457f3ead587"
+reference = "v5.0.3"
+resolved_reference = "1784b37f548076aca16d7236882c085428f9b23e"
 
 [[package]]
 name = "requests"
@@ -1473,4 +1473,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "83a5d3df2df79489a911872e1b6831c0fd8970206607b024a927ba1170dacaa6"
+content-hash = "e57098ad16c955af3a8792bb1040b44964ef4dcd76a9b6ded568f7e58685546b"
