@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "my-test"
-version = "0.2.84"
+version = "0.2.85"
 description = ""
 authors = ["Philipp Jaschke <philipp.jaschke@schulz.st>"]
 readme = "README.md"
@@ -17,7 +17,7 @@ redis = {git = "https://github.com/redis/redis-py.git", tag = "v5.0.3"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "7.4.4"
-hypothesis = "6.99.2"
+hypothesis = "6.99.5"
 flake8 = "6.1.0"
 isort = "5.13.2"
 pepperize-cdk-ses-smtp-credentials = "0.3.628"
