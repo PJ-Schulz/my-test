@@ -157,13 +157,13 @@ ujson = ["ujson (>=5.7.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.431"
+version = "2.3.433"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "cdk-aurora-globaldatabase-2.3.431.tar.gz", hash = "sha256:f8ecbc57e6a6b509fae7566a82aef4007aef67b17db077332740fb4d71c6b4f3"},
-    {file = "cdk_aurora_globaldatabase-2.3.431-py3-none-any.whl", hash = "sha256:61b7f3b36371303d07c435f5082b2a4bd0be6283a89c950bbaee6e158d8aab35"},
+    {file = "cdk-aurora-globaldatabase-2.3.433.tar.gz", hash = "sha256:867a8f3350f6eb3f4b299bcff810f6c516369da78d4eeda8e043ee0ccafbddf5"},
+    {file = "cdk_aurora_globaldatabase-2.3.433-py3-none-any.whl", hash = "sha256:f266cd54fc80bf7c6ff0d5af6254afa4c5db991c6cd9b2edc5cead2abf0e4c56"},
 ]
 
 [package.dependencies]
@@ -862,13 +862,13 @@ files = [
 
 [[package]]
 name = "pydantic"
-version = "2.6.3"
+version = "2.6.4"
 description = "Data validation using Python type hints"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pydantic-2.6.3-py3-none-any.whl", hash = "sha256:72c6034df47f46ccdf81869fddb81aade68056003900a8724a4f160700016a2a"},
-    {file = "pydantic-2.6.3.tar.gz", hash = "sha256:e07805c4c7f5c6826e33a1d4c9d47950d7eaf34868e2690f8594d2e30241f11f"},
+    {file = "pydantic-2.6.4-py3-none-any.whl", hash = "sha256:cc46fce86607580867bdc3361ad462bab9c222ef042d3da86f2fb333e1d916c5"},
+    {file = "pydantic-2.6.4.tar.gz", hash = "sha256:b1704e0847db01817624a6b86766967f552dd9dbf3afba4004409f908dcc84e6"},
 ]
 
 [package.dependencies]
@@ -1474,4 +1474,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1fc5c55cbba510de7e5292111fe674b11d1949ca90cd93bc65e464cdce6153cd"
+content-hash = "c8470c2620d496a4c17e8a639c24e6fa8dd0143864d9174f9da8fd5ce12baf6f"
