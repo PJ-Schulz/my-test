@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "my-test"
-version = "0.2.96"
+version = "0.2.97"
 description = ""
 authors = ["Philipp Jaschke <philipp.jaschke@schulz.st>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "0.104.1"
+fastapi = "0.110.0"
 pydantic = "2.6.4"
 trio = "0.23.2"
 cdk-lambda-subminute = "2.0.338"
