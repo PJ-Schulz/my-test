@@ -157,13 +157,13 @@ ujson = ["ujson (>=5.7.0)"]
 
 [[package]]
 name = "cdk-aurora-globaldatabase"
-version = "2.3.446"
+version = "2.3.447"
 description = "cdk-aurora-globaldatabase is an AWS CDK construct library that provides Cross Region Create Global Aurora RDS Databases."
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "cdk-aurora-globaldatabase-2.3.446.tar.gz", hash = "sha256:ee91414432ce2f9663129f1da7c0a98ced634f0e4eb58e9d291afe383a8113f6"},
-    {file = "cdk_aurora_globaldatabase-2.3.446-py3-none-any.whl", hash = "sha256:29bb102abe6de3b0e7f93dad425205c7570f12f8ccb080a629142f7e384ae22e"},
+    {file = "cdk-aurora-globaldatabase-2.3.447.tar.gz", hash = "sha256:9c4c50c37973fa115fda713f2dc8a7b12a8e41f20b197f5e95b2690318bce08f"},
+    {file = "cdk_aurora_globaldatabase-2.3.447-py3-none-any.whl", hash = "sha256:ce9fb1da43c4a90247d059880ddc16d3cad08135079ab559c8fa67a57b377752"},
 ]
 
 [package.dependencies]
@@ -1474,4 +1474,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "66534926d5c7377e24d2b5a8a2569198a90b0ded548a047bde191c3faed5f727"
+content-hash = "09bc9cb29516dec14c20ed143e03bf91ee0cc33dcf98df9a9ef321b9538a6fa1"
