@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "my-test"
-version = "0.2.96"
+version = "0.2.97"
 description = ""
 authors = ["Philipp Jaschke <philipp.jaschke@schulz.st>"]
 readme = "README.md"
@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.10"
 fastapi = "0.104.1"
 pydantic = "2.6.4"
-trio = "0.23.2"
+trio = "0.25.0"
 cdk-lambda-subminute = "2.0.338"
 cdk-aurora-globaldatabase = "2.3.447"
 test234 = {git = "https://github.com/PJ-Schulz/test234.git", tag = "3.1.4"}
